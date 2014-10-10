@@ -1,0 +1,30 @@
+{
+  "author": "Matthew McCall and Ekavali Mishra",
+  "name": "PHR-Style-Guide",
+  "description": "Style Guide for Personal Health Records",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:amida-tech/PHR-Style-Guide.git"
+  },
+  "bugs": {
+    "url": "https://github.com/amida-tech/PHR-Style-Guide/issues"
+  },
+  "licenses": [
+    {
+      "type": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  ],
+  "dependencies": {
+    "kss": "1.0.x"
+  },
+  "devDependencies": {
+    "grunt": "0.4.x",
+    "grunt-contrib-watch": "0.6.x",
+    "grunt-kss": "0.4.x"
+  },
+  "engines": {
+    "node": "0.10.x"
+  }
+}
