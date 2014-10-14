@@ -1,9 +1,16 @@
+// Colors
+//
+// Defines base colors for the site.
+//
+// Styleguide 1.
+@import "./colors/colors.scss";
+
 // Modules
 // 
 // Reusable elements that can be used across the site.
 // So far this just includes buttons. 
 // 
-// Styleguide 1.
+// Styleguide 2.
 @import "./elements/buttons.scss";
 
 // Forms
@@ -11,5 +18,6 @@
 // Covers styles used for forms, such as the `<input>` and `<select>`
 // elements.
 //
-// Styleguide 2.
+// Styleguide 3.
 @import "./forms/base.scss";
+
