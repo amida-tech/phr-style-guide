@@ -1,22 +1,59 @@
-// Colors
+// Color Scheme
 //
-// Basic colors fo the site
-// 
+// The site's overall color scheme should create a calming experience to clearly convey health information
+// without creating undue sensations of alarm or excitement.  A monochromatic color scheme of a subtle blue shades
+// serves this purpose well.  By having a muted basic color scheme, we can better accent critical components
+// of health data.
+//
 // Markup:
-// <div href="#" class="background {$modifiers}" style="width: 200px; height: 200px;"> #asdf</div>
+// <div class="basic-blue {$modifiers}"></div>
 // 
-// .primary             - Indicate that the button is the primary feature of this form.
-// .remove              - Indicate that the button will remove a feature,
-//                        or other negative
-//                        connotations.
-// :hover               - Highlight the button when hovered.
-// :disabled            - Make the button change appearance to reflect it being disabled.
-// :active              - "Press" the button down when clicked.
+// .light-blue           - Lighter accent color for less visual weight.
+// .deep-blue			 - Deeper accent color for heavier visual weight.
 //
 // Styleguide 1.1
 //
 
-.background {
-	background-color: #aaa
+@import '../bootstrap/stylesheets/bootstrap';
+
+$primary-color: #6AA8FF;
+
+.basic-blue {
+	width: 200px;
+	height: 200px;
+	background-color: $primary-color;
+	border: 50px solid $primary-color;
+	@extend .img-circle;
 }
 
+.light-blue {
+	background-color: #B0D1FF;
+}
+
+.deep-blue {
+	background-color: #1F5CB2;
+}
+
+// Contrasting Colors
+//
+// Several contrasting colors can be used to highlight important information; for instance stress alerts  
+// about dangerous test results, or warn about changes or action which might be required.  These colors are 
+// complementary to the base colors to drive contrast, and should be used very sparingly.
+// These colors should be presented contrasting with the base colors.
+// 
+// Markup:
+// <div class="basic-blue {$modifiers}"></div>
+// 
+// .basic-orange           - Muted Orange for standard colors/general alerts.
+// .bright-orange          - Intense Orange color for extreme contrast, should be used very sparingly.
+//
+// Styleguide 1.2
+//
+
+.basic-orange {
+	background-color: #FFD27C;
+}
+
+.bright-orange {
+	background-color: #DE9509;
+}
