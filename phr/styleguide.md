@@ -1,4 +1,4 @@
-<h1 class="kss-title kss-title-main"> OH YEAH </h1>
+<h1 class="kss-title kss-title-main">PHR Style Guide</h1>
 
 This is a demo of [kss-node](https://github.com/kss-node/kss-node)'s built-in styleguide generator. The module is essentially a reimplementation of the [KSS](https://github.com/kneath/kss) Ruby parser, in Node:
 
