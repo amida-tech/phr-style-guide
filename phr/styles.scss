@@ -8,13 +8,21 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
 
+// Layout
+// 
+// General layout parameters of the site.
+// 
+// Styleguide 0.
+@import "./layout/layout";
+
 // Buttons
 // 
 // Reusable elements that can be used across the site.
 // So far this just includes buttons. 
 // 
 // Styleguide 1.
-@import "./elements/buttons.scss";
+@import "./buttons/buttons";
+@import "./buttons/button-groups";
 
 // Forms
 //
@@ -35,11 +43,10 @@
 
 // Navigation
 //
-// Covers styles used for forms, such as the `<input>` and `<select>`
-// elements.
+// Covers the main page navigation, and styling of navigation elements.
 //
 // Styleguide 4.
-@import "./forms/base.scss";
+@import "./nav/navs.scss";
 
 // Iconography
 //
