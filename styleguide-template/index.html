@@ -10,25 +10,23 @@
   <meta name="description" content="">
   <meta name="generator" content="kss-node" />
   <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="public/kss.css">
   <link rel="stylesheet" href="public/style.css">
+  <link rel="stylesheet" href="public/kss.css">
 </head>
-<body><div id="kss-wrapper">
+<body><div id="kss-wrapper" class="container-fluid">
 
-<div id="kss-nav">
-  <header id="kss-header">
-    <hgroup><h1>Styleguide</h1></hgroup>
-  </header>
-  <aside>
-    <nav><ul>
-      <li><a href="index.html">0.0: Overview</a></li>
+<div id="kss-nav" class="col-md-3">
+  <div id="kss-header" class="panel panel-default col-md-12">
+    <h1 class="text-center">Styleguide</h1>
+  </div>
+  <div class="btn-group-vertical col-md-12">
+      <button type="button" class="btn btn-default btn-block"><a href="index.html">0.0: Overview</a></button>
     {{#eachRoot}}
-      <li><a href="section-{{reference}}.html">{{reference}}.0: {{header}}</a></li>
+      <button type="button" class="btn btn-default btn-block"><a href="section-{{reference}}.html">{{reference}}.0: {{header}}</a></button>
     {{/eachRoot}}
-    </ul></nav>
-  </aside>
+  </div>
 </div>
-<div role="main" id="kss-main">
+<div role="main" id="kss-main" class="col-md-9">
   <article id="kss-content">
   {{#if overview}}
     {{{overview}}}
@@ -87,8 +85,9 @@
 </div>
 
 <!-- SCRIPTS -->
+<script src="public/bootstrap.js"></script>
 <script src="public/kss.js"></script>
-<script src="public/prettify.js"></script>
+<!--<script src="public/prettify.js"></script>-->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script>
   $(document).ready(function(){
