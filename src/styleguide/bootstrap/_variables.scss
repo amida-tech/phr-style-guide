@@ -25,7 +25,7 @@ $brand-blue-dark:  #3869B2;
 $brand-orange: #FFCD6A;
 $brand-orange-dark: #B28426;
 
-$brand-primary:         #428bca !default;
+$brand-primary:         $brand-blue !default;
 $brand-success:         #5cb85c !default;
 $brand-info:            #5bc0de !default;
 $brand-warning:         #f0ad4e !default;
@@ -165,9 +165,9 @@ $btn-default-color:              #333 !default;
 $btn-default-bg:                 #fff !default;
 $btn-default-border:             #ccc !default;
 
-$btn-primary-color:              #fff !default;
+$btn-primary-color:              #fff  !default;
 $btn-primary-bg:                 $brand-primary !default;
-$btn-primary-border:             darken($btn-primary-bg, 5%) !default;
+$btn-primary-border:             darken($brand-primary, 5%) !default;
 
 $btn-success-color:              #fff !default;
 $btn-success-bg:                 $brand-success !default;

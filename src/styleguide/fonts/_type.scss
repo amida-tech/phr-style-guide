@@ -4,7 +4,7 @@
 //
 // Markup:
 // <div class="text-center">
-//   <h1>Do you know who I am?</h1>
+//   <h1>You know nothing, Jon Snow.</h1>
 // </div>
 // 
 // Styleguide 3.1.1
@@ -17,7 +17,7 @@
 //
 // Markup:
 // <div class="text-center">
-//   <h2>I want the whole thing.</h2>
+//   <h2>Winter is coming.</h2>
 // </div>
 //
 // Styleguide 3.1.2
@@ -29,7 +29,7 @@
 //
 // Markup:
 // <div class="text-center">
-//   <h3>Pay attention now, you might learn something.</h3>
+//   <h3>There is only one thing we say to death, "Not today!"</h3>
 // </div>
 //
 // Styleguide 3.1.3
@@ -41,7 +41,7 @@
 //
 // Markup:
 // <div class="text-center">
-//   <h4>I can't feel my legs.</h4>
+//   <h4>A Lannister always pays his debts.</h4>
 // </div>
 //
 // Styleguide 3.1.4
@@ -53,7 +53,7 @@
 //
 // Markup:
 // <div class="text-center">
-//   <h5>My, you are much bigger in person.</h5>
+//   <h5>I learned how to die a long time ago.</h5>
 // </div>
 //
 // Styleguide 3.1.5
@@ -65,7 +65,7 @@
 //
 // Markup:
 // <div class="text-center">
-//   <h6>This page brought to you by the letter 'R.'</h6>
+//   <h6>Wise men do not make demands of kings.</h6>
 // </div>
 //
 // Styleguide 3.1.6
@@ -96,8 +96,9 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-family: $font-family-sans-serif;
+  font-family: $font-family-impact;
   text-transform: uppercase;
+  letter-spacing: 1px;
   color: $brand-blue-dark;
   margin-top: $line-height-computed;
   margin-bottom: ($line-height-computed / 2);
@@ -120,7 +121,8 @@ h3, .h3 {
 }
 
 h4, .h4 {
-  font-family: $font-family-sans-serif;
+  font-family: $font-family-impact;
+  letter-spacing: 1px;
   text-transform: uppercase;
   color: $brand-blue-dark;
   margin-top: ($line-height-computed / 2);
