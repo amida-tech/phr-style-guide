@@ -2,7 +2,7 @@
 //
 // Below are the text-oriented form elements used on the site.
 //
-// Styleguide 2.1
+// Styleguide 8.1
 
 
 // Single-Line Text Boxes
@@ -15,7 +15,7 @@
 //
 // Markup: <input type="text" class="{$modifiers}" value="Text"/>
 // 
-// Styleguide 2.1.1
+// Styleguide 8.1.1
 input[type='text'] {
 	-webkit-appearance: none;
 	   -moz-appearance: none;
@@ -67,7 +67,7 @@ input[type='text'] {
 // .invalid   - To be used if the input has failed a validation check.
 // .valid     - To be used if the input has passed a validation check (intended for live validation in particular).
 //
-// Styleguide 2.1.2
+// Styleguide 8.1.2
 .mod-input {
 	position:relative;
 	display:block;

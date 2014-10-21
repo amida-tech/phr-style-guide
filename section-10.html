@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Design Project: Living Styleguide</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node" />
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="public/style.css">
+  <link rel="stylesheet" href="public/kss.css">
+</head>
+<body>
+<div id="kss-wrapper" class="container-fluid" style="margin: 20px 0px;">
+<div id="kss-nav" class="col-md-3">
+  <div id="kss-header" class="panel panel-default">
+    <h3 class="text-center">Style Guide</h3>
+  </div>
+  <div class="btn-group-vertical" style="width: 100%;">
+      <a type="button" class="btn btn-default btn-block" href="index.html">0.0: Overview</a>
+      <a type="button" class="btn btn-default btn-block" href="section-1.html">1.0: Layout</a>
+      <a type="button" class="btn btn-default btn-block" href="section-2.html">2.0: Buttons</a>
+      <a type="button" class="btn btn-default btn-block" href="section-3.html">3.0: Text Styling</a>
+      <a type="button" class="btn btn-default btn-block" href="section-4.html">4.0: Navigation</a>
+      <a type="button" class="btn btn-default btn-block" href="section-5.html">5.0: Tables</a>
+      <a type="button" class="btn btn-default btn-block" href="section-6.html">6.0: Panels</a>
+      <a type="button" class="btn btn-default btn-block" href="section-7.html">7.0: Icons and Images</a>
+      <a type="button" class="btn btn-default btn-block" href="section-8.html">8.0: Forms</a>
+      <a type="button" class="btn btn-default btn-block" href="section-9.html">9.0: Colors</a>
+      <a type="button" class="btn btn-default btn-block" href="section-10.html">10.0: Examples</a>
+  </div>
+</div>
+<div role="main" id="kss-main" class="col-md-9">
+  <div id="kss-content">
+
+
+      <div class="panel panel-default">
+        <div class="panel-body">
+        <h1 class="kss-title"><span class="kss-ref">10.0</span> - Examples</h1>
+      
+
+        <div class="kss-box"><p>The colors to be used on the site.  These colors should generally inherit to the rest of the site.
+Grayscale elements aren&#39;t defined in this area; instead they are referenced by component.</p>
+</div>
+
+      </div>
+      </div>
+
+  </div>
+</div>
+
+<!-- SCRIPTS -->
+<script src="public/bootstrap.js"></script>
+<script src="public/kss.js"></script>
+<!--<script src="public/prettify.js"></script>-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function(){
+    var sidebarAdjust = function() {
+      // Match footer/body height
+      var height = Math.max($(window).height(), $('#kss-main').height());
+
+      if ($(window).width() <= 768) {
+        $('#kss-main, #kss-nav').height('auto');
+      } else {
+        $('#kss-main, #kss-nav').height(height);
+      }
+    };
+
+    $(window).resize(sidebarAdjust);
+    $(window).scroll(sidebarAdjust);
+    sidebarAdjust();
+
+    // Ensure code blocks are highlighted properly...
+    $('pre>code').addClass('prettyprint');
+    prettyPrint();
+  });
+</script>
+
+
+</div></body>
+</html>
