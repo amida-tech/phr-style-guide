@@ -21,67 +21,64 @@
   </div>
   <div class="btn-group-vertical" style="width: 100%;">
       <button type="button" class="btn btn-default btn-block"><a href="index.html">0.0: Overview</a></button>
-    {{#eachRoot}}
-      <button type="button" class="btn btn-default btn-block"><a href="section-{{reference}}.html">{{reference}}.0: {{header}}</a></button>
-    {{/eachRoot}}
+      <button type="button" class="btn btn-default btn-block"><a href="section-0.html">0.0: Layout</a></button>
+      <button type="button" class="btn btn-default btn-block"><a href="section-1.html">1.0: Buttons</a></button>
+      <button type="button" class="btn btn-default btn-block"><a href="section-2.html">2.0: Forms</a></button>
+      <button type="button" class="btn btn-default btn-block"><a href="section-3.html">3.0: Text Styling</a></button>
+      <button type="button" class="btn btn-default btn-block"><a href="section-4.html">4.0: Navigation</a></button>
+      <button type="button" class="btn btn-default btn-block"><a href="section-5.html">5.0: Iconography</a></button>
+      <button type="button" class="btn btn-default btn-block"><a href="section-6.html">6.0: Colors</a></button>
   </div>
 </div>
 <div role="main" id="kss-main" class="col-md-9">
   <div id="kss-content">
-  {{#if overview}}
-    <div class="panel panel-default"><div class="panel-body">{{{overview}}}</div></div>
-  {{else}}
 
-    {{!
-      Find each section, in order.
-      If there's no markup or modifiers supplied, use a Markdown-only
-      layout instead.
-
-      The "root" element comes first in this loop, and can be detected using
-      the "#ifDepth 1" block as seen below.
-    }}
-    {{#eachSection rootNumber}}
-      {{#unlessDepth 1}}
-      <section class="kss-depth-{{ refDepth }}">
-      {{/unlessDepth}}
 
       <div class="panel panel-default">
         <div class="panel-body">
-        <h1 class="kss-title"><span class="kss-ref">{{ reference }}{{#ifDepth 1}}.0{{/ifDepth}}</span> - {{ header }}</h1>
+        <h1 class="kss-title"><span class="kss-ref">4.0</span> - Navigation</h1>
       
 
-      {{#if description}}
-        <div class="kss-box">{{{description}}}</div>
-      {{/if}}
+        <div class="kss-box"><p>Covers the main page navigation, and styling of navigation elements.</p>
+</div>
 
-      {{#if markup}}
+      </div>
+      </div>
+
+      <section class="kss-depth-3">
+
+      <div class="panel panel-default">
+        <div class="panel-body">
+        <h1 class="kss-title"><span class="kss-ref">4.1.1</span> - Main Navigation</h1>
+      
+
+        <div class="kss-box"><p>The primary navigation of the site should be statically fixed to the top left of the page.
+The navigation should feature a user picture and name, so at any time there can be certainty as to who&#39;s record is being viewed.</p>
+</div>
+
         <table class="kss-mod-list table">
           <tr class="kss-mod-desc-group">
-            <td>{{modifierMarkup}}</td>
+            <td><div class="btn-group-vertical">
+  <button type="button" class="btn btn-default">Home</button>
+  <button type="button" class="btn btn-default">My Record</button>
+  <button type="button" class="btn btn-default">My Files</button>
+</div></td>
             <td class="kss-mod-desc"><p>Default styling</p></td>
             <td class="kss-mod-name"></td>  
           </tr>
-        {{#eachModifier}}
-          <tr class="kss-mod-desc-group">
-            <td>{{modifierMarkup}}</td>
-            <td class="kss-mod-desc">{{{description}}}</td>
-            <td class="kss-mod-name"><p>{{name}}</p></td>
-          </tr>
-        {{/eachModifier}}
         </table>
 
         <div class="kss-markup">
-          <pre class="prettyprint lang-html">{{markup}}</pre>
+          <pre class="prettyprint lang-html">&lt;div class=&quot;btn-group-vertical&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Home&lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;My Record&lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;My Files&lt;/button&gt;
+&lt;/div&gt;</pre>
         </div>
-      {{/if}}
       </div>
       </div>
 
-      {{#unlessDepth 1}}
       </section>
-      {{/unlessDepth}}
-    {{/eachSection}}
-  {{/if}}
   </div>
 </div>
 

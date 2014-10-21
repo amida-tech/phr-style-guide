@@ -9,7 +9,7 @@ The style is written in Sassy CSS (SCSS).
 To compile the documentation, you will need to install kss-node; kss-node can be installed via npm with the following command (npm must also be installed).
 
 ``
-sudo npm install -g kss-node
+sudo npm install -g kss
 ``
 
 Then, run the following command from the project base directory
