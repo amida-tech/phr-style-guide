@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Design Project: Living Styleguide</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node" />
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="public/style.css">
+  <link rel="stylesheet" href="public/kss.css">
+</head>
+<body>
+<div id="kss-wrapper" class="container-fluid" style="margin: 20px 0px;">
+<div id="kss-nav" class="col-md-3">
+  <div id="kss-header" class="panel panel-default">
+    <h3 class="text-center">Style Guide</h3>
+  </div>
+  <div class="btn-group-vertical" style="width: 100%;">
+      <button type="button" class="btn btn-default btn-block"><a href="index.html">0.0: Overview</a></button>
+      <button type="button" class="btn btn-default btn-block"><a href="section-0.html">0.0: Layout</a></button>
+      <button type="button" class="btn btn-default btn-block"><a href="section-1.html">1.0: Buttons</a></button>
+      <button type="button" class="btn btn-default btn-block"><a href="section-2.html">2.0: Forms</a></button>
+      <button type="button" class="btn btn-default btn-block"><a href="section-3.html">3.0: Text Styling</a></button>
+      <button type="button" class="btn btn-default btn-block"><a href="section-4.html">4.0: Navigation</a></button>
+      <button type="button" class="btn btn-default btn-block"><a href="section-5.html">5.0: Iconography</a></button>
+      <button type="button" class="btn btn-default btn-block"><a href="section-6.html">6.0: Colors</a></button>
+  </div>
+</div>
+<div role="main" id="kss-main" class="col-md-9">
+  <div id="kss-content">
+
+
+      <div class="panel panel-default">
+        <div class="panel-body">
+        <h1 class="kss-title"><span class="kss-ref">5.0</span> - Iconography</h1>
+      
+
+        <div class="kss-box"><p>Covers the use of visual symbols to indicate various components/items.</p>
+</div>
+
+      </div>
+      </div>
+
+      <section class="kss-depth-2">
+
+      <div class="panel panel-default">
+        <div class="panel-body">
+        <h1 class="kss-title"><span class="kss-ref">5.1</span> - Medical Icons</h1>
+      
+
+        <div class="kss-box"><p>Icon symbology should be used consistently throughout the site to ensure a cohesive user experience.
+Note:  All icons selected for this set are licensed under the Creative Commons License.</p>
+</div>
+
+        <table class="kss-mod-list table">
+          <tr class="kss-mod-desc-group">
+            <td><div class="basic-blue {$modifiers}"></div></td>
+            <td class="kss-mod-desc"><p>Default styling</p></td>
+            <td class="kss-mod-name"></td>  
+          </tr>
+          <tr class="kss-mod-desc-group">
+            <td><div class="basic-blue allergies"></div></td>
+            <td class="kss-mod-desc"><p>Allergies and intolerances may be to foods, environmental factors, substances, or medications.  To account for this, a simple icon should be used to universally represent allergies and intolerances when possible.</p>
+</td>
+            <td class="kss-mod-name"><p>.allergies</p></td>
+          </tr>
+          <tr class="kss-mod-desc-group">
+            <td><div class="basic-blue deep-blue"></div></td>
+            <td class="kss-mod-desc"><p>Deeper accent color for heavier visual weight.</p>
+</td>
+            <td class="kss-mod-name"><p>.deep-blue</p></td>
+          </tr>
+        </table>
+
+        <div class="kss-markup">
+          <pre class="prettyprint lang-html">&lt;div class=&quot;basic-blue {$modifiers}&quot;&gt;&lt;/div&gt;</pre>
+        </div>
+      </div>
+      </div>
+
+      </section>
+  </div>
+</div>
+
+<!-- SCRIPTS -->
+<script src="public/bootstrap.js"></script>
+<script src="public/kss.js"></script>
+<!--<script src="public/prettify.js"></script>-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function(){
+    var sidebarAdjust = function() {
+      // Match footer/body height
+      var height = Math.max($(window).height(), $('#kss-main').height());
+
+      if ($(window).width() <= 768) {
+        $('#kss-main, #kss-nav').height('auto');
+      } else {
+        $('#kss-main, #kss-nav').height(height);
+      }
+    };
+
+    $(window).resize(sidebarAdjust);
+    $(window).scroll(sidebarAdjust);
+    sidebarAdjust();
+
+    // Ensure code blocks are highlighted properly...
+    $('pre>code').addClass('prettyprint');
+    prettyPrint();
+  });
+</script>
+
+
+</div></body>
+</html>
