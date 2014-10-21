@@ -1,0 +1,51 @@
+
+#kss-wrapper {
+  &:extend(.container-fluid);
+  }
+
+#kss-nav {
+	&:extend(.col-md-3);
+
+}
+
+#kss-header h1 {
+  font-size:1.5em;
+  margin-top:5/3em;
+  margin-left:4/3em;
+}
+
+#kss-main, #kss-nav {
+
+}
+
+#kss-main {
+	&:extend(.col-md-9);
+}
+
+.kss-mod-list {
+  width:100%;
+}
+
+.kss-mod-name {
+  text-align:right;
+  width:20%;
+  font-size:0.75em;
+}
+
+.kss-mod-example {
+  padding-bottom:20px;
+         
+         display:block;
+  &>td { display:block; }
+}
+
+.kss-markup {
+  margin-bottom:40px;
+}
+
+.kss-depth-1 > h1 { font-size: 2.5em * 0.950; }
+.kss-depth-2 > h1 { font-size: 2.5em * 0.900; }
+.kss-depth-3 > h1 { font-size: 2.5em * 0.850; }
+.kss-depth-4 > h1 { font-size: 2.5em * 0.800; }
+.kss-depth-5 > h1 { font-size: 2.5em * 0.750; }
+.kss-depth-6 > h1 { font-size: 2.5em * 0.700; }
