@@ -13,13 +13,13 @@
   <link rel="stylesheet" href="public/style.css">
   <link rel="stylesheet" href="public/kss.css">
 </head>
-<body><div id="kss-wrapper" class="container-fluid">
-
+<body>
+<div id="kss-wrapper" class="container-fluid" style="margin: 20px 0px;">
 <div id="kss-nav" class="col-md-3">
-  <div id="kss-header" class="panel panel-default col-md-12">
-    <h1 class="text-center">Styleguide</h1>
+  <div id="kss-header" class="panel panel-default">
+    <h3 class="text-center">Style Guide</h3>
   </div>
-  <div class="btn-group-vertical col-md-12">
+  <div class="btn-group-vertical" style="width: 100%;">
       <button type="button" class="btn btn-default btn-block"><a href="index.html">0.0: Overview</a></button>
     {{#eachRoot}}
       <button type="button" class="btn btn-default btn-block"><a href="section-{{reference}}.html">{{reference}}.0: {{header}}</a></button>
@@ -27,7 +27,7 @@
   </div>
 </div>
 <div role="main" id="kss-main" class="col-md-9">
-  <article id="kss-content">
+  <div id="kss-content">
   {{#if overview}}
     {{{overview}}}
   {{else}}
@@ -45,28 +45,27 @@
       <section class="kss-depth-{{ refDepth }}">
       {{/unlessDepth}}
 
-      <h1 class="kss-title"><span class="kss-ref">{{ reference }}{{#ifDepth 1}}.0{{/ifDepth}}</span> - {{ header }}</h1>
+      <div class="panel panel-default">
+        <div class="panel-body">
+        <h1 class="kss-title"><span class="kss-ref">{{ reference }}{{#ifDepth 1}}.0{{/ifDepth}}</span> - {{ header }}</h1>
+      
 
       {{#if description}}
         <div class="kss-box">{{{description}}}</div>
       {{/if}}
 
       {{#if markup}}
-        <table class="kss-mod-list">
+        <table class="kss-mod-list table">
           <tr class="kss-mod-desc-group">
+            <td>{{modifierMarkup}}</td>
             <td class="kss-mod-desc"><p>Default styling</p></td>
-            <td class="kss-mod-name"></td>
-          </tr>
-          <tr class="kss-mod-example">
-            <td colspan="2">{{modifierMarkup}}</td>
+            <td class="kss-mod-name"></td>  
           </tr>
         {{#eachModifier}}
           <tr class="kss-mod-desc-group">
+            <td>{{modifierMarkup}}</td>
             <td class="kss-mod-desc">{{{description}}}</td>
             <td class="kss-mod-name"><p>{{name}}</p></td>
-          </tr>
-          <tr class="kss-mod-example">
-            <td colspan="2">{{modifierMarkup}}</td>
           </tr>
         {{/eachModifier}}
         </table>
@@ -75,13 +74,15 @@
           <pre class="prettyprint lang-html">{{markup}}</pre>
         </div>
       {{/if}}
+      </div>
+      </div>
 
       {{#unlessDepth 1}}
       </section>
       {{/unlessDepth}}
     {{/eachSection}}
   {{/if}}
-  </article>
+  </div>
 </div>
 
 <!-- SCRIPTS -->

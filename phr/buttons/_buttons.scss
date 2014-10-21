@@ -1,10 +1,18 @@
+// Default Buttons
 //
-// Buttons
-// --------------------------------------------------
-
-
-// Base styles
-// --------------------------------------------------
+// The site's overall color scheme should create a calming experience to clearly convey health information
+// without creating undue sensations of alarm or excitement.  A monochromatic color scheme of a subtle blue shades
+// serves this purpose well.  By having a muted basic color scheme, we can better accent critical components
+// of health data.
+//
+// Markup:
+// <button class="btn btn-default {$modifiers}">Click Me!</button>
+// 
+// .active           - Active
+// .disabled      - Disabled
+//
+// Styleguide 1.1.0
+//
 
 .btn {
   display: inline-block;

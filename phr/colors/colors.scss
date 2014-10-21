@@ -6,7 +6,7 @@
 // of health data.
 //
 // Markup:
-// <div class="basic-blue {$modifiers}"></div>
+// <div class="color-sample {$modifiers}"></div>
 // 
 // .light-blue           - Lighter accent color for less visual weight.
 // .deep-blue			 - Deeper accent color for heavier visual weight.
@@ -14,22 +14,22 @@
 // Styleguide 6.1
 //
 
-$primary-color: #6AA8FF;
+$primary-color: #6AA6FF;
 
-.basic-blue {
+.color-sample {
 	width: 200px;
 	height: 200px;
-	background-color: $primary-color;
-	border: 50px solid $primary-color;
+	background-color: $brand-blue;
+	border: 50px solid $brand-blue;
 	@extend .img-circle;
 }
 
 .light-blue {
-	background-color: #B0D1FF;
+	background-color: $brand-blue-light;
 }
 
 .deep-blue {
-	background-color: #1F5CB2;
+	background-color: $brand-blue-dark;
 }
 
 // Contrasting Colors
@@ -40,18 +40,18 @@ $primary-color: #6AA8FF;
 // These colors should be presented contrasting with the base colors.
 // 
 // Markup:
-// <div class="basic-blue {$modifiers}"></div>
+// <div class="color-sample {$modifiers}"></div>
 // 
 // .basic-orange           - Muted Orange for standard colors/general alerts.
-// .bright-orange          - Intense Orange color for extreme contrast, should be used very sparingly.
+// .dark-orange          - Intense Orange color for extreme contrast, should be used very sparingly.
 //
 // Styleguide 6.2
 //
 
 .basic-orange {
-	background-color: #FFD27C;
+	background-color: $brand-orange;
 }
 
-.bright-orange {
-	background-color: #DE9509;
+.dark-orange {
+	background-color: $brand-orange-dark;
 }
