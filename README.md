@@ -15,7 +15,7 @@ sudo npm install -g kss-node
 Then, run the following command from the project base directory
 
 ``
-kss-node phr styleguide --sass phr/styles.scss --template styleguide-template
+kss-node src/styleguide ./ --sass src/styleguide/styles.scss --template src/styleguide-template
 ``
 
 The 'phr' directory contains the SCSS files from which the styleguide is generated.  The styleguide-template directory contains the template or 'skin' of the styleguide.  The Styleguide itself will be output to the 'styleguide' directory; open the base 'index.html' file in your browser to view the styleguide.
