@@ -1,16 +1,9 @@
-<h1 class="kss-title kss-title-main">PHR Style Guide</h1>
+<h1 class="kss-title kss-title-main"> Style Guide</h1>
 
-This is a demo of [kss-node](https://github.com/kss-node/kss-node)'s built-in styleguide generator. The module is essentially a reimplementation of the [KSS](https://github.com/kneath/kss) Ruby parser, in Node:
+This guide defines a set of standards for use in the creation of medically-themed web applications, particularly Personal Health Records (PHRs).
 
-> Inspired by TomDoc, KSS attempts to provide a methodology for writing maintainable, documented CSS within a team.
-> Specifically, KSS is a documentation specification and styleguide format.
-> It is **not** a preprocessor, CSS framework, naming convention, or specificity guideline.
->
-> KSS is a set of guidelines to help you produce an HTML styleguide tied to CSS documentation that is nice to read in plain text, yet structured enough to be automatically extracted and processed by a machine.
+This project uses the [KSS](https://github.com/kneath/kss) markup syntax on top of [SCSS](http://sass-lang.com/) to automatically generate the style guide, and is powered by [kss-node](https://github.com/kss-node/kss-node).  Both its content and template are based on [Twitter Bootstrap](http://getbootstrap.com) v3.2.0.
 
-The upshot of this is that KSS can be used for generating site styleguides or CSS documentation pages. This site is generated with the `kss-node` command-line tool used on this [demo project](https://github.com/kss-node/kss-node/tree/master/demo).
-
-Check out the [project on Github](https://github.com/kss-node/kss-node) for more information about the code, or read on for details on how to document your stylesheets for KSS.
 
 # KSS Specification
 

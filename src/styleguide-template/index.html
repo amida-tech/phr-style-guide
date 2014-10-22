@@ -11,7 +11,6 @@
   <meta name="generator" content="kss-node" />
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="public/style.css">
-  <link rel="stylesheet" href="public/kss.css">
 </head>
 <body>
 <div id="kss-wrapper" class="container-fluid" style="margin: 20px 0px;">
@@ -51,26 +50,27 @@
       
 
       {{#if description}}
-        <div class="kss-box">{{{description}}}</div>
+        <div>{{{description}}}</div>
       {{/if}}
 
       {{#if markup}}
-        <table class="kss-mod-list table">
-          <tr class="kss-mod-desc-group">
-            <td>{{modifierMarkup}}</td>
-            <td class="kss-mod-desc"><p>Default styling</p></td>
-            <td class="kss-mod-name"></td>  
-          </tr>
+        <div>
+          <div style="border-bottom: 1px solid #ccc;">
+            <p>Default styling</p>
+            <div>{{modifierMarkup}}</div>
+            <p class="text-right">&nbsp;</p>  
+          </div>
         {{#eachModifier}}
-          <tr class="kss-mod-desc-group">
-            <td>{{modifierMarkup}}</td>
-            <td class="kss-mod-desc">{{{description}}}</td>
-            <td class="kss-mod-name"><p>{{name}}</p></td>
-          </tr>
+          <div style="border-bottom: 1px solid #ccc;">
+            <p>{{{description}}}</p>
+            <div>{{modifierMarkup}}</div>
+            <p class="text-right">{{name}}</p>
+          </div>
         {{/eachModifier}}
-        </table>
+        </div>
 
-        <div class="kss-markup">
+        <div>
+          <p></p>
           <pre class="prettyprint lang-html">{{markup}}</pre>
         </div>
       {{/if}}
@@ -86,33 +86,10 @@
 </div>
 
 <!-- SCRIPTS -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="public/bootstrap.js"></script>
 <script src="public/kss.js"></script>
 <!--<script src="public/prettify.js"></script>-->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script>
-  $(document).ready(function(){
-    var sidebarAdjust = function() {
-      // Match footer/body height
-      var height = Math.max($(window).height(), $('#kss-main').height());
-
-      if ($(window).width() <= 768) {
-        $('#kss-main, #kss-nav').height('auto');
-      } else {
-        $('#kss-main, #kss-nav').height(height);
-      }
-    };
-
-    $(window).resize(sidebarAdjust);
-    $(window).scroll(sidebarAdjust);
-    sidebarAdjust();
-
-    // Ensure code blocks are highlighted properly...
-    $('pre>code').addClass('prettyprint');
-    prettyPrint();
-  });
-</script>
-
 
 </div></body>
 </html>
