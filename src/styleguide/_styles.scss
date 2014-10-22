@@ -49,9 +49,14 @@
 @import "bootstrap/utilities";
 @import "bootstrap/responsive-utilities";
 
+
+//Custom imports
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
 @import url(http://fonts.googleapis.com/css?family=Montserrat);
+@import "extensions/icons";
+@import "extensions/colors";
+@import "extensions/images";
 
 // Layout
 // 
@@ -95,7 +100,6 @@
 // Covers the use of visual symbols to indicate various components/items.
 //
 // Styleguide 7.
-@import "./extensions/icons";
 
 // Forms
 //
@@ -110,7 +114,6 @@
 // Grayscale elements aren't defined in this area; instead they are referenced by component.
 //
 // Styleguide 9.
-@import "./extensions/colors";
 
 // Examples
 //
@@ -118,4 +121,3 @@
 // Grayscale elements aren't defined in this area; instead they are referenced by component.
 //
 // Styleguide 10.
-// @import "./extensions/colors";

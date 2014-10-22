@@ -89,29 +89,75 @@
         <h1 class="kss-title"><span class="kss-ref">4.1</span> - Main Navigation</h1>
       
 
-        <div><p>The primary navigation of the site should be statically fixed to the top left of the page.
-The navigation should feature a user picture and name, so at any time there can be certainty as to who&#39;s record is being viewed.</p>
+        <div><p>A primary navigaton bar across the top of the page provides a static placeholder for information, while freeing up the body of the site for the display of content specific information.</p>
+<p>In applications which have multiple users, and in which a user may be viewing records of various individuals, it is important to differentiate between the current user and the record of the individual.  A common design practice is to embed the current user&#39;s information in the navigation bar.  This provides user-level context and will allow a system user to visually differentiate between themselves, and the individual associated with any given record.</p>
 </div>
 
         <div>
           <div style="border-bottom: 1px solid #ccc;">
             <p>Default styling</p>
-            <div><div class="btn-group-vertical">
-  <button type="button" class="btn btn-default">Home</button>
-  <button type="button" class="btn btn-default">My Record</button>
-  <button type="button" class="btn btn-default">My Files</button>
-</div></div>
+            <div><nav class="navbar navbar-default" role="navigation">
+ <div class="container-fluid">
+   <div class="navbar-header">
+     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-1">
+       <span class="sr-only">Toggle navigation</span>
+       <span class="icon-bar"></span>
+       <span class="icon-bar"></span>
+       <span class="icon-bar"></span>
+     </button>
+     <a class="navbar-brand" href="#">Brand</a>
+   </div>
+   <div class="collapse navbar-collapse" id="example-1">
+     <ul class="nav navbar-nav navbar-right">
+       <li><a href="#">Link</a></li>
+       <li class="dropdown">
+         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img class="img-navbar" src="public/img/img-demo.png"> Suzie Demo <span class="caret"></span></a>
+         <ul class="dropdown-menu" role="menu">
+           <li><a href="#">Action</a></li>
+           <li><a href="#">Another action</a></li>
+           <li><a href="#">Something else here</a></li>
+          <li class="divider"></li>
+           <li><a href="#">Separated link</a></li>
+         </ul>
+       </li>
+     </ul>
+   </div><!-- /.navbar-collapse -->
+ </div><!-- /.container-fluid -->
+</nav></div>
             <p class="text-right">&nbsp;</p>  
           </div>
         </div>
 
         <div>
           <p></p>
-          <pre class="prettyprint lang-html">&lt;div class=&quot;btn-group-vertical&quot;&gt;
-  &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Home&lt;/button&gt;
-  &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;My Record&lt;/button&gt;
-  &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;My Files&lt;/button&gt;
-&lt;/div&gt;</pre>
+          <pre class="prettyprint lang-html">&lt;nav class=&quot;navbar navbar-default&quot; role=&quot;navigation&quot;&gt;
+ &lt;div class=&quot;container-fluid&quot;&gt;
+   &lt;div class=&quot;navbar-header&quot;&gt;
+     &lt;button type=&quot;button&quot; class=&quot;navbar-toggle collapsed&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#example-1&quot;&gt;
+       &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+       &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+       &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+       &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+     &lt;/button&gt;
+     &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Brand&lt;/a&gt;
+   &lt;/div&gt;
+   &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;example-1&quot;&gt;
+     &lt;ul class=&quot;nav navbar-nav navbar-right&quot;&gt;
+       &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+       &lt;li class=&quot;dropdown&quot;&gt;
+         &lt;a href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;&lt;img class=&quot;img-navbar&quot; src=&quot;public/img/img-demo.png&quot;&gt; Suzie Demo &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+         &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
+           &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+           &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+           &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+           &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+         &lt;/ul&gt;
+       &lt;/li&gt;
+     &lt;/ul&gt;
+   &lt;/div&gt;&lt;!-- /.navbar-collapse --&gt;
+ &lt;/div&gt;&lt;!-- /.container-fluid --&gt;
+&lt;/nav&gt;</pre>
         </div>
       </div>
       </div>
@@ -121,7 +167,7 @@ The navigation should feature a user picture and name, so at any time there can 
 
       <div class="panel panel-default">
         <div class="panel-body">
-        <h1 class="kss-title"><span class="kss-ref">4.2</span> - Main Navigation</h1>
+        <h1 class="kss-title"><span class="kss-ref">4.1</span> - Main Navigation</h1>
       
 
         <div><p>The primary navigation of the site should be statically fixed to the top left of the page.

@@ -1,18 +1,42 @@
 
 // Main Navigation
 //
-// The primary navigation of the site should be statically fixed to the top left of the page.
-// The navigation should feature a user picture and name, so at any time there can be certainty as to who's record is being viewed.
+// A primary navigaton bar across the top of the page provides a static placeholder for information, while freeing up the body of the site for the display of content specific information.
+//
+// In applications which have multiple users, and in which a user may be viewing records of various individuals, it is important to differentiate between the current user and the record of the individual.  A common design practice is to embed the current user's information in the navigation bar.  This provides user-level context and will allow a system user to visually differentiate between themselves, and the individual associated with any given record.
 //
 //
 // Markup:
-// <div class="btn-group-vertical">
-//   <button type="button" class="btn btn-default">Home</button>
-//   <button type="button" class="btn btn-default">My Record</button>
-//   <button type="button" class="btn btn-default">My Files</button>
-// </div>
+// <nav class="navbar navbar-default" role="navigation">
+//  <div class="container-fluid">
+//    <div class="navbar-header">
+//      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-1">
+//        <span class="sr-only">Toggle navigation</span>
+//        <span class="icon-bar"></span>
+//        <span class="icon-bar"></span>
+//        <span class="icon-bar"></span>
+//      </button>
+//      <a class="navbar-brand" href="#">Brand</a>
+//    </div>
+//    <div class="collapse navbar-collapse" id="example-1">
+//      <ul class="nav navbar-nav navbar-right">
+//        <li><a href="#">Link</a></li>
+//        <li class="dropdown">
+//          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img class="img-navbar" src="public/img/img-demo.png"> Suzie Demo <span class="caret"></span></a>
+//          <ul class="dropdown-menu" role="menu">
+//            <li><a href="#">Action</a></li>
+//            <li><a href="#">Another action</a></li>
+//            <li><a href="#">Something else here</a></li>
+//           <li class="divider"></li>
+//            <li><a href="#">Separated link</a></li>
+//          </ul>
+//        </li>
+//      </ul>
+//    </div><!-- /.navbar-collapse -->
+//  </div><!-- /.container-fluid -->
+//</nav>
 //
-// Styleguide 4.2
+// Styleguide 4.1
 //
 
 //
