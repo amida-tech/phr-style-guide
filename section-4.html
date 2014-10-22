@@ -11,23 +11,60 @@
   <meta name="generator" content="kss-node" />
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="public/style.css">
-  <link rel="stylesheet" href="public/kss.css">
 </head>
 <body>
+
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
 <div id="kss-wrapper" class="container-fluid" style="margin: 20px 0px;">
+
 <div id="kss-nav" class="col-md-3">
   <div id="kss-header" class="panel panel-default">
     <h3 class="text-center">Style Guide</h3>
   </div>
   <div class="btn-group-vertical" style="width: 100%;">
-      <button type="button" class="btn btn-default btn-block"><a href="index.html">0.0: Overview</a></button>
-      <button type="button" class="btn btn-default btn-block"><a href="section-0.html">0.0: Layout</a></button>
-      <button type="button" class="btn btn-default btn-block"><a href="section-1.html">1.0: Buttons</a></button>
-      <button type="button" class="btn btn-default btn-block"><a href="section-2.html">2.0: Forms</a></button>
-      <button type="button" class="btn btn-default btn-block"><a href="section-3.html">3.0: Text Styling</a></button>
-      <button type="button" class="btn btn-default btn-block"><a href="section-4.html">4.0: Navigation</a></button>
-      <button type="button" class="btn btn-default btn-block"><a href="section-5.html">5.0: Iconography</a></button>
-      <button type="button" class="btn btn-default btn-block"><a href="section-6.html">6.0: Colors</a></button>
+      <a type="button" class="btn btn-default btn-block" href="index.html">0.0: Overview</a>
+      <a type="button" class="btn btn-default btn-block" href="section-1.html">1.0: Layout</a>
+      <a type="button" class="btn btn-default btn-block" href="section-2.html">2.0: Buttons</a>
+      <a type="button" class="btn btn-default btn-block" href="section-3.html">3.0: Text Styling</a>
+      <a type="button" class="btn btn-default btn-block" href="section-4.html">4.0: Navigation</a>
+      <a type="button" class="btn btn-default btn-block" href="section-5.html">5.0: Tables</a>
+      <a type="button" class="btn btn-default btn-block" href="section-6.html">6.0: Panels</a>
+      <a type="button" class="btn btn-default btn-block" href="section-7.html">7.0: Icons and Images</a>
+      <a type="button" class="btn btn-default btn-block" href="section-8.html">8.0: Forms</a>
+      <a type="button" class="btn btn-default btn-block" href="section-9.html">9.0: Colors</a>
+      <a type="button" class="btn btn-default btn-block" href="section-10.html">10.0: Examples</a>
   </div>
 </div>
 <div role="main" id="kss-main" class="col-md-9">
@@ -39,36 +76,118 @@
         <h1 class="kss-title"><span class="kss-ref">4.0</span> - Navigation</h1>
       
 
-        <div class="kss-box"><p>Covers the main page navigation, and styling of navigation elements.</p>
+        <div><p>Covers the main page navigation, and styling of navigation elements.</p>
 </div>
 
       </div>
       </div>
 
-      <section class="kss-depth-3">
+      <section class="kss-depth-2">
 
       <div class="panel panel-default">
         <div class="panel-body">
-        <h1 class="kss-title"><span class="kss-ref">4.1.1</span> - Main Navigation</h1>
+        <h1 class="kss-title"><span class="kss-ref">4.1</span> - Main Navigation</h1>
       
 
-        <div class="kss-box"><p>The primary navigation of the site should be statically fixed to the top left of the page.
+        <div><p>A primary navigaton bar across the top of the page provides a static placeholder for information, while freeing up the body of the site for the display of content specific information.</p>
+<p>In applications which have multiple users, and in which a user may be viewing records of various individuals, it is important to differentiate between the current user and the record of the individual.  A common design practice is to embed the current user&#39;s information in the navigation bar.  This provides user-level context and will allow a system user to visually differentiate between themselves, and the individual associated with any given record.</p>
+</div>
+
+        <div>
+          <div style="border-bottom: 1px solid #ccc;">
+            <p>Default styling</p>
+            <div><nav class="navbar navbar-default" role="navigation">
+ <div class="container-fluid">
+   <div class="navbar-header">
+     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-1">
+       <span class="sr-only">Toggle navigation</span>
+       <span class="icon-bar"></span>
+       <span class="icon-bar"></span>
+       <span class="icon-bar"></span>
+     </button>
+     <a class="navbar-brand" href="#">Brand</a>
+   </div>
+   <div class="collapse navbar-collapse" id="example-1">
+     <ul class="nav navbar-nav navbar-right">
+       <li><a href="#">Link</a></li>
+       <li class="dropdown">
+         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img class="img-navbar" src="public/img/img-demo.png"> Suzie Demo <span class="caret"></span></a>
+         <ul class="dropdown-menu" role="menu">
+           <li><a href="#">Action</a></li>
+           <li><a href="#">Another action</a></li>
+           <li><a href="#">Something else here</a></li>
+          <li class="divider"></li>
+           <li><a href="#">Separated link</a></li>
+         </ul>
+       </li>
+     </ul>
+   </div><!-- /.navbar-collapse -->
+ </div><!-- /.container-fluid -->
+</nav></div>
+            <p class="text-right">&nbsp;</p>  
+          </div>
+        </div>
+
+        <div>
+          <p></p>
+          <pre class="prettyprint lang-html">&lt;nav class=&quot;navbar navbar-default&quot; role=&quot;navigation&quot;&gt;
+ &lt;div class=&quot;container-fluid&quot;&gt;
+   &lt;div class=&quot;navbar-header&quot;&gt;
+     &lt;button type=&quot;button&quot; class=&quot;navbar-toggle collapsed&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#example-1&quot;&gt;
+       &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+       &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+       &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+       &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+     &lt;/button&gt;
+     &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Brand&lt;/a&gt;
+   &lt;/div&gt;
+   &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;example-1&quot;&gt;
+     &lt;ul class=&quot;nav navbar-nav navbar-right&quot;&gt;
+       &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+       &lt;li class=&quot;dropdown&quot;&gt;
+         &lt;a href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;&lt;img class=&quot;img-navbar&quot; src=&quot;public/img/img-demo.png&quot;&gt; Suzie Demo &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+         &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
+           &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+           &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+           &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+           &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+         &lt;/ul&gt;
+       &lt;/li&gt;
+     &lt;/ul&gt;
+   &lt;/div&gt;&lt;!-- /.navbar-collapse --&gt;
+ &lt;/div&gt;&lt;!-- /.container-fluid --&gt;
+&lt;/nav&gt;</pre>
+        </div>
+      </div>
+      </div>
+
+      </section>
+      <section class="kss-depth-2">
+
+      <div class="panel panel-default">
+        <div class="panel-body">
+        <h1 class="kss-title"><span class="kss-ref">4.1</span> - Main Navigation</h1>
+      
+
+        <div><p>The primary navigation of the site should be statically fixed to the top left of the page.
 The navigation should feature a user picture and name, so at any time there can be certainty as to who&#39;s record is being viewed.</p>
 </div>
 
-        <table class="kss-mod-list table">
-          <tr class="kss-mod-desc-group">
-            <td><div class="btn-group-vertical">
+        <div>
+          <div style="border-bottom: 1px solid #ccc;">
+            <p>Default styling</p>
+            <div><div class="btn-group-vertical">
   <button type="button" class="btn btn-default">Home</button>
   <button type="button" class="btn btn-default">My Record</button>
   <button type="button" class="btn btn-default">My Files</button>
-</div></td>
-            <td class="kss-mod-desc"><p>Default styling</p></td>
-            <td class="kss-mod-name"></td>  
-          </tr>
-        </table>
+</div></div>
+            <p class="text-right">&nbsp;</p>  
+          </div>
+        </div>
 
-        <div class="kss-markup">
+        <div>
+          <p></p>
           <pre class="prettyprint lang-html">&lt;div class=&quot;btn-group-vertical&quot;&gt;
   &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Home&lt;/button&gt;
   &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;My Record&lt;/button&gt;
@@ -83,33 +202,10 @@ The navigation should feature a user picture and name, so at any time there can 
 </div>
 
 <!-- SCRIPTS -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="public/bootstrap.js"></script>
 <script src="public/kss.js"></script>
 <!--<script src="public/prettify.js"></script>-->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script>
-  $(document).ready(function(){
-    var sidebarAdjust = function() {
-      // Match footer/body height
-      var height = Math.max($(window).height(), $('#kss-main').height());
-
-      if ($(window).width() <= 768) {
-        $('#kss-main, #kss-nav').height('auto');
-      } else {
-        $('#kss-main, #kss-nav').height(height);
-      }
-    };
-
-    $(window).resize(sidebarAdjust);
-    $(window).scroll(sidebarAdjust);
-    sidebarAdjust();
-
-    // Ensure code blocks are highlighted properly...
-    $('pre>code').addClass('prettyprint');
-    prettyPrint();
-  });
-</script>
-
 
 </div></body>
 </html>

@@ -1,0 +1,57 @@
+// Color Scheme
+//
+// The site's overall color scheme should create a calming experience to clearly convey health information
+// without creating undue sensations of alarm or excitement.  A monochromatic color scheme of a subtle blue shades
+// serves this purpose well.  By having a muted basic color scheme, we can better accent critical components
+// of health data.
+//
+// Markup:
+// <div class="color-sample {$modifiers}"></div>
+// 
+// .light-blue           - Lighter accent color for less visual weight.
+// .deep-blue			 - Deeper accent color for heavier visual weight.
+//
+// Styleguide 9.1
+//
+
+$primary-color: #6AA6FF;
+
+.color-sample {
+	width: 200px;
+	height: 200px;
+	background-color: $brand-blue;
+	border: 50px solid $brand-blue;
+	@extend .img-circle;
+}
+
+.light-blue {
+	background-color: $brand-blue-light;
+}
+
+.deep-blue {
+	background-color: $brand-blue-dark;
+}
+
+// Contrasting Colors
+//
+// Several contrasting colors can be used to highlight important information; for instance stress alerts  
+// about dangerous test results, or warn about changes or action which might be required.  These colors are 
+// complementary to the base colors to drive contrast, and should be used very sparingly.
+// These colors should be presented contrasting with the base colors.
+// 
+// Markup:
+// <div class="color-sample {$modifiers}"></div>
+// 
+// .basic-orange           - Muted Orange for standard colors/general alerts.
+// .dark-orange          - Intense Orange color for extreme contrast, should be used very sparingly.
+//
+// Styleguide 9.2
+//
+
+.basic-orange {
+	background-color: $brand-orange;
+}
+
+.dark-orange {
+	background-color: $brand-orange-dark;
+}

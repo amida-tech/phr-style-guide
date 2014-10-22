@@ -73,15 +73,97 @@
 
       <div class="panel panel-default">
         <div class="panel-body">
-        <h1 class="kss-title"><span class="kss-ref">6.0</span> - Panels</h1>
+        <h1 class="kss-title"><span class="kss-ref">9.0</span> - Colors</h1>
       
 
-        <div><p>Covers the use of visual symbols to indicate various components/items.</p>
+        <div><p>The colors to be used on the site.  These colors should generally inherit to the rest of the site.
+Grayscale elements aren&#39;t defined in this area; instead they are referenced by component.</p>
 </div>
 
       </div>
       </div>
 
+      <section class="kss-depth-2">
+
+      <div class="panel panel-default">
+        <div class="panel-body">
+        <h1 class="kss-title"><span class="kss-ref">9.1</span> - Color Scheme</h1>
+      
+
+        <div><p>The site&#39;s overall color scheme should create a calming experience to clearly convey health information
+without creating undue sensations of alarm or excitement.  A monochromatic color scheme of a subtle blue shades
+serves this purpose well.  By having a muted basic color scheme, we can better accent critical components
+of health data.</p>
+</div>
+
+        <div>
+          <div style="border-bottom: 1px solid #ccc;">
+            <p>Default styling</p>
+            <div><div class="color-sample {$modifiers}"></div></div>
+            <p class="text-right">&nbsp;</p>  
+          </div>
+          <div style="border-bottom: 1px solid #ccc;">
+            <p><p>Lighter accent color for less visual weight.</p>
+</p>
+            <div><div class="color-sample light-blue"></div></div>
+            <p class="text-right">.light-blue</p>
+          </div>
+          <div style="border-bottom: 1px solid #ccc;">
+            <p><p>Deeper accent color for heavier visual weight.</p>
+</p>
+            <div><div class="color-sample deep-blue"></div></div>
+            <p class="text-right">.deep-blue</p>
+          </div>
+        </div>
+
+        <div>
+          <p></p>
+          <pre class="prettyprint lang-html">&lt;div class=&quot;color-sample {$modifiers}&quot;&gt;&lt;/div&gt;</pre>
+        </div>
+      </div>
+      </div>
+
+      </section>
+      <section class="kss-depth-2">
+
+      <div class="panel panel-default">
+        <div class="panel-body">
+        <h1 class="kss-title"><span class="kss-ref">9.2</span> - Contrasting Colors</h1>
+      
+
+        <div><p>Several contrasting colors can be used to highlight important information; for instance stress alerts<br>about dangerous test results, or warn about changes or action which might be required.  These colors are 
+complementary to the base colors to drive contrast, and should be used very sparingly.
+These colors should be presented contrasting with the base colors.</p>
+</div>
+
+        <div>
+          <div style="border-bottom: 1px solid #ccc;">
+            <p>Default styling</p>
+            <div><div class="color-sample {$modifiers}"></div></div>
+            <p class="text-right">&nbsp;</p>  
+          </div>
+          <div style="border-bottom: 1px solid #ccc;">
+            <p><p>Muted Orange for standard colors/general alerts.</p>
+</p>
+            <div><div class="color-sample basic-orange"></div></div>
+            <p class="text-right">.basic-orange</p>
+          </div>
+          <div style="border-bottom: 1px solid #ccc;">
+            <p><p>Intense Orange color for extreme contrast, should be used very sparingly.</p>
+</p>
+            <div><div class="color-sample dark-orange"></div></div>
+            <p class="text-right">.dark-orange</p>
+          </div>
+        </div>
+
+        <div>
+          <p></p>
+          <pre class="prettyprint lang-html">&lt;div class=&quot;color-sample {$modifiers}&quot;&gt;&lt;/div&gt;</pre>
+        </div>
+      </div>
+      </div>
+
+      </section>
   </div>
 </div>
 

@@ -11,23 +11,60 @@
   <meta name="generator" content="kss-node" />
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="public/style.css">
-  <link rel="stylesheet" href="public/kss.css">
 </head>
 <body>
+
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
 <div id="kss-wrapper" class="container-fluid" style="margin: 20px 0px;">
+
 <div id="kss-nav" class="col-md-3">
   <div id="kss-header" class="panel panel-default">
     <h3 class="text-center">Style Guide</h3>
   </div>
   <div class="btn-group-vertical" style="width: 100%;">
-      <button type="button" class="btn btn-default btn-block"><a href="index.html">0.0: Overview</a></button>
-      <button type="button" class="btn btn-default btn-block"><a href="section-0.html">0.0: Layout</a></button>
-      <button type="button" class="btn btn-default btn-block"><a href="section-1.html">1.0: Buttons</a></button>
-      <button type="button" class="btn btn-default btn-block"><a href="section-2.html">2.0: Forms</a></button>
-      <button type="button" class="btn btn-default btn-block"><a href="section-3.html">3.0: Text Styling</a></button>
-      <button type="button" class="btn btn-default btn-block"><a href="section-4.html">4.0: Navigation</a></button>
-      <button type="button" class="btn btn-default btn-block"><a href="section-5.html">5.0: Iconography</a></button>
-      <button type="button" class="btn btn-default btn-block"><a href="section-6.html">6.0: Colors</a></button>
+      <a type="button" class="btn btn-default btn-block" href="index.html">0.0: Overview</a>
+      <a type="button" class="btn btn-default btn-block" href="section-1.html">1.0: Layout</a>
+      <a type="button" class="btn btn-default btn-block" href="section-2.html">2.0: Buttons</a>
+      <a type="button" class="btn btn-default btn-block" href="section-3.html">3.0: Text Styling</a>
+      <a type="button" class="btn btn-default btn-block" href="section-4.html">4.0: Navigation</a>
+      <a type="button" class="btn btn-default btn-block" href="section-5.html">5.0: Tables</a>
+      <a type="button" class="btn btn-default btn-block" href="section-6.html">6.0: Panels</a>
+      <a type="button" class="btn btn-default btn-block" href="section-7.html">7.0: Icons and Images</a>
+      <a type="button" class="btn btn-default btn-block" href="section-8.html">8.0: Forms</a>
+      <a type="button" class="btn btn-default btn-block" href="section-9.html">9.0: Colors</a>
+      <a type="button" class="btn btn-default btn-block" href="section-10.html">10.0: Examples</a>
   </div>
 </div>
 <div role="main" id="kss-main" class="col-md-9">
@@ -39,7 +76,7 @@
         <h1 class="kss-title"><span class="kss-ref">3.0</span> - Text Styling</h1>
       
 
-        <div class="kss-box"><p>This style guide uses open fonts freely available through Google Fonts.
+        <div><p>This style guide uses open fonts freely available through Google Fonts.
 These are currently &#39;Open Sans&#39; and &#39;Roboto Condensed.&#39;</p>
 </div>
 
@@ -53,20 +90,21 @@ These are currently &#39;Open Sans&#39; and &#39;Roboto Condensed.&#39;</p>
         <h1 class="kss-title"><span class="kss-ref">3.1.1</span> - Heading 1</h1>
       
 
-        <div class="kss-box"><p>Heading level one should be used sparingly, and only to communicate very important information.</p>
+        <div><p>Heading level one should be used sparingly, and only to communicate very important information.</p>
 </div>
 
-        <table class="kss-mod-list table">
-          <tr class="kss-mod-desc-group">
-            <td><div class="text-center">
+        <div>
+          <div style="border-bottom: 1px solid #ccc;">
+            <p>Default styling</p>
+            <div><div class="text-center">
   <h1>You know nothing, Jon Snow.</h1>
-</div></td>
-            <td class="kss-mod-desc"><p>Default styling</p></td>
-            <td class="kss-mod-name"></td>  
-          </tr>
-        </table>
+</div></div>
+            <p class="text-right">&nbsp;</p>  
+          </div>
+        </div>
 
-        <div class="kss-markup">
+        <div>
+          <p></p>
           <pre class="prettyprint lang-html">&lt;div class=&quot;text-center&quot;&gt;
   &lt;h1&gt;You know nothing, Jon Snow.&lt;/h1&gt;
 &lt;/div&gt;</pre>
@@ -82,20 +120,21 @@ These are currently &#39;Open Sans&#39; and &#39;Roboto Condensed.&#39;</p>
         <h1 class="kss-title"><span class="kss-ref">3.1.2</span> - Heading 2</h1>
       
 
-        <div class="kss-box"><p>Level two headers should act as sub-headers; for instance this header also looks great offset a row below level one headers.</p>
+        <div><p>Level two headers should act as sub-headers; for instance this header also looks great offset a row below level one headers.</p>
 </div>
 
-        <table class="kss-mod-list table">
-          <tr class="kss-mod-desc-group">
-            <td><div class="text-center">
+        <div>
+          <div style="border-bottom: 1px solid #ccc;">
+            <p>Default styling</p>
+            <div><div class="text-center">
   <h2>Winter is coming.</h2>
-</div></td>
-            <td class="kss-mod-desc"><p>Default styling</p></td>
-            <td class="kss-mod-name"></td>  
-          </tr>
-        </table>
+</div></div>
+            <p class="text-right">&nbsp;</p>  
+          </div>
+        </div>
 
-        <div class="kss-markup">
+        <div>
+          <p></p>
           <pre class="prettyprint lang-html">&lt;div class=&quot;text-center&quot;&gt;
   &lt;h2&gt;Winter is coming.&lt;/h2&gt;
 &lt;/div&gt;</pre>
@@ -111,20 +150,21 @@ These are currently &#39;Open Sans&#39; and &#39;Roboto Condensed.&#39;</p>
         <h1 class="kss-title"><span class="kss-ref">3.1.3</span> - Heading 3</h1>
       
 
-        <div class="kss-box"><p>Heading level three is useful as a header of sub-elements on pages, for instance a block of information regarding a specific allergy.</p>
+        <div><p>Heading level three is useful as a header of sub-elements on pages, for instance a block of information regarding a specific allergy.</p>
 </div>
 
-        <table class="kss-mod-list table">
-          <tr class="kss-mod-desc-group">
-            <td><div class="text-center">
+        <div>
+          <div style="border-bottom: 1px solid #ccc;">
+            <p>Default styling</p>
+            <div><div class="text-center">
   <h3>There is only one thing we say to death, "Not today!"</h3>
-</div></td>
-            <td class="kss-mod-desc"><p>Default styling</p></td>
-            <td class="kss-mod-name"></td>  
-          </tr>
-        </table>
+</div></div>
+            <p class="text-right">&nbsp;</p>  
+          </div>
+        </div>
 
-        <div class="kss-markup">
+        <div>
+          <p></p>
           <pre class="prettyprint lang-html">&lt;div class=&quot;text-center&quot;&gt;
   &lt;h3&gt;There is only one thing we say to death, &quot;Not today!&quot;&lt;/h3&gt;
 &lt;/div&gt;</pre>
@@ -140,20 +180,21 @@ These are currently &#39;Open Sans&#39; and &#39;Roboto Condensed.&#39;</p>
         <h1 class="kss-title"><span class="kss-ref">3.1.4</span> - Heading 4</h1>
       
 
-        <div class="kss-box"><p>Level four headings carry roughly equivalent visual weight with standard text.  It is useful for providing variety in the expression of dense areas of text.</p>
+        <div><p>Level four headings carry roughly equivalent visual weight with standard text.  It is useful for providing variety in the expression of dense areas of text.</p>
 </div>
 
-        <table class="kss-mod-list table">
-          <tr class="kss-mod-desc-group">
-            <td><div class="text-center">
+        <div>
+          <div style="border-bottom: 1px solid #ccc;">
+            <p>Default styling</p>
+            <div><div class="text-center">
   <h4>A Lannister always pays his debts.</h4>
-</div></td>
-            <td class="kss-mod-desc"><p>Default styling</p></td>
-            <td class="kss-mod-name"></td>  
-          </tr>
-        </table>
+</div></div>
+            <p class="text-right">&nbsp;</p>  
+          </div>
+        </div>
 
-        <div class="kss-markup">
+        <div>
+          <p></p>
           <pre class="prettyprint lang-html">&lt;div class=&quot;text-center&quot;&gt;
   &lt;h4&gt;A Lannister always pays his debts.&lt;/h4&gt;
 &lt;/div&gt;</pre>
@@ -169,20 +210,21 @@ These are currently &#39;Open Sans&#39; and &#39;Roboto Condensed.&#39;</p>
         <h1 class="kss-title"><span class="kss-ref">3.1.5</span> - Heading 5</h1>
       
 
-        <div class="kss-box"><p>Level five headings should be used for communication of sub-primary page information, for instance breadcrumbs and picture captions.</p>
+        <div><p>Level five headings should be used for communication of sub-primary page information, for instance breadcrumbs and picture captions.</p>
 </div>
 
-        <table class="kss-mod-list table">
-          <tr class="kss-mod-desc-group">
-            <td><div class="text-center">
+        <div>
+          <div style="border-bottom: 1px solid #ccc;">
+            <p>Default styling</p>
+            <div><div class="text-center">
   <h5>I learned how to die a long time ago.</h5>
-</div></td>
-            <td class="kss-mod-desc"><p>Default styling</p></td>
-            <td class="kss-mod-name"></td>  
-          </tr>
-        </table>
+</div></div>
+            <p class="text-right">&nbsp;</p>  
+          </div>
+        </div>
 
-        <div class="kss-markup">
+        <div>
+          <p></p>
           <pre class="prettyprint lang-html">&lt;div class=&quot;text-center&quot;&gt;
   &lt;h5&gt;I learned how to die a long time ago.&lt;/h5&gt;
 &lt;/div&gt;</pre>
@@ -198,20 +240,21 @@ These are currently &#39;Open Sans&#39; and &#39;Roboto Condensed.&#39;</p>
         <h1 class="kss-title"><span class="kss-ref">3.1.6</span> - Heading 6</h1>
       
 
-        <div class="kss-box"><p>Heading level six should be used extremely rarely, for information such as links to annotation or copyright information.</p>
+        <div><p>Heading level six should be used extremely rarely, for information such as links to annotation or copyright information.</p>
 </div>
 
-        <table class="kss-mod-list table">
-          <tr class="kss-mod-desc-group">
-            <td><div class="text-center">
+        <div>
+          <div style="border-bottom: 1px solid #ccc;">
+            <p>Default styling</p>
+            <div><div class="text-center">
   <h6>Wise men do not make demands of kings.</h6>
-</div></td>
-            <td class="kss-mod-desc"><p>Default styling</p></td>
-            <td class="kss-mod-name"></td>  
-          </tr>
-        </table>
+</div></div>
+            <p class="text-right">&nbsp;</p>  
+          </div>
+        </div>
 
-        <div class="kss-markup">
+        <div>
+          <p></p>
           <pre class="prettyprint lang-html">&lt;div class=&quot;text-center&quot;&gt;
   &lt;h6&gt;Wise men do not make demands of kings.&lt;/h6&gt;
 &lt;/div&gt;</pre>
@@ -227,18 +270,19 @@ These are currently &#39;Open Sans&#39; and &#39;Roboto Condensed.&#39;</p>
         <h1 class="kss-title"><span class="kss-ref">3.2.1</span> - Coded Text</h1>
       
 
-        <div class="kss-box"><p>Coded text can be used to express encoded medical data or data which may appear on a printed label, for instance a medication SIG or an ICD encoded entry.  Generally, they should appear during drill-down into a record&#39;s sub-elements.</p>
+        <div><p>Coded text can be used to express encoded medical data or data which may appear on a printed label, for instance a medication SIG or an ICD encoded entry.  Generally, they should appear during drill-down into a record&#39;s sub-elements.</p>
 </div>
 
-        <table class="kss-mod-list table">
-          <tr class="kss-mod-desc-group">
-            <td><code>Take 2 pills 3x daily</code></td>
-            <td class="kss-mod-desc"><p>Default styling</p></td>
-            <td class="kss-mod-name"></td>  
-          </tr>
-        </table>
+        <div>
+          <div style="border-bottom: 1px solid #ccc;">
+            <p>Default styling</p>
+            <div><code>Take 2 pills 3x daily</code></div>
+            <p class="text-right">&nbsp;</p>  
+          </div>
+        </div>
 
-        <div class="kss-markup">
+        <div>
+          <p></p>
           <pre class="prettyprint lang-html">&lt;code&gt;Take 2 pills 3x daily&lt;/code&gt;</pre>
         </div>
       </div>
@@ -249,33 +293,10 @@ These are currently &#39;Open Sans&#39; and &#39;Roboto Condensed.&#39;</p>
 </div>
 
 <!-- SCRIPTS -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="public/bootstrap.js"></script>
 <script src="public/kss.js"></script>
 <!--<script src="public/prettify.js"></script>-->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script>
-  $(document).ready(function(){
-    var sidebarAdjust = function() {
-      // Match footer/body height
-      var height = Math.max($(window).height(), $('#kss-main').height());
-
-      if ($(window).width() <= 768) {
-        $('#kss-main, #kss-nav').height('auto');
-      } else {
-        $('#kss-main, #kss-nav').height(height);
-      }
-    };
-
-    $(window).resize(sidebarAdjust);
-    $(window).scroll(sidebarAdjust);
-    sidebarAdjust();
-
-    // Ensure code blocks are highlighted properly...
-    $('pre>code').addClass('prettyprint');
-    prettyPrint();
-  });
-</script>
-
 
 </div></body>
 </html>

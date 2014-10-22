@@ -55,68 +55,34 @@
   </div>
   <div class="btn-group-vertical" style="width: 100%;">
       <a type="button" class="btn btn-default btn-block" href="index.html">0.0: Overview</a>
-    {{#eachRoot}}
-      <a type="button" class="btn btn-default btn-block" href="section-{{reference}}.html">{{reference}}.0: {{header}}</a>
-    {{/eachRoot}}
+      <a type="button" class="btn btn-default btn-block" href="section-1.html">1.0: Layout</a>
+      <a type="button" class="btn btn-default btn-block" href="section-2.html">2.0: Buttons</a>
+      <a type="button" class="btn btn-default btn-block" href="section-3.html">3.0: Text Styling</a>
+      <a type="button" class="btn btn-default btn-block" href="section-4.html">4.0: Navigation</a>
+      <a type="button" class="btn btn-default btn-block" href="section-5.html">5.0: Tables</a>
+      <a type="button" class="btn btn-default btn-block" href="section-6.html">6.0: Panels</a>
+      <a type="button" class="btn btn-default btn-block" href="section-7.html">7.0: Icons and Images</a>
+      <a type="button" class="btn btn-default btn-block" href="section-8.html">8.0: Forms</a>
+      <a type="button" class="btn btn-default btn-block" href="section-9.html">9.0: Colors</a>
+      <a type="button" class="btn btn-default btn-block" href="section-10.html">10.0: Examples</a>
   </div>
 </div>
 <div role="main" id="kss-main" class="col-md-9">
   <div id="kss-content">
-  {{#if overview}}
-    <div class="panel panel-default"><div class="panel-body">{{{overview}}}</div></div>
-  {{else}}
 
-    {{!
-      Find each section, in order.
-      If there's no markup or modifiers supplied, use a Markdown-only
-      layout instead.
-
-      The "root" element comes first in this loop, and can be detected using
-      the "#ifDepth 1" block as seen below.
-    }}
-    {{#eachSection rootNumber}}
-      {{#unlessDepth 1}}
-      <section class="kss-depth-{{ refDepth }}">
-      {{/unlessDepth}}
 
       <div class="panel panel-default">
         <div class="panel-body">
-        <h1 class="kss-title"><span class="kss-ref">{{ reference }}{{#ifDepth 1}}.0{{/ifDepth}}</span> - {{ header }}</h1>
+        <h1 class="kss-title"><span class="kss-ref">8.0</span> - Forms</h1>
       
 
-      {{#if description}}
-        <div>{{{description}}}</div>
-      {{/if}}
+        <div><p>Covers styles used for forms, such as the <code>&lt;input&gt;</code> and <code>&lt;select&gt;</code>
+elements.</p>
+</div>
 
-      {{#if markup}}
-        <div>
-          <div style="border-bottom: 1px solid #ccc;">
-            <p>Default styling</p>
-            <div>{{modifierMarkup}}</div>
-            <p class="text-right">&nbsp;</p>  
-          </div>
-        {{#eachModifier}}
-          <div style="border-bottom: 1px solid #ccc;">
-            <p>{{{description}}}</p>
-            <div>{{modifierMarkup}}</div>
-            <p class="text-right">{{name}}</p>
-          </div>
-        {{/eachModifier}}
-        </div>
-
-        <div>
-          <p></p>
-          <pre class="prettyprint lang-html">{{markup}}</pre>
-        </div>
-      {{/if}}
       </div>
       </div>
 
-      {{#unlessDepth 1}}
-      </section>
-      {{/unlessDepth}}
-    {{/eachSection}}
-  {{/if}}
   </div>
 </div>
 

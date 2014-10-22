@@ -55,68 +55,72 @@
   </div>
   <div class="btn-group-vertical" style="width: 100%;">
       <a type="button" class="btn btn-default btn-block" href="index.html">0.0: Overview</a>
-    {{#eachRoot}}
-      <a type="button" class="btn btn-default btn-block" href="section-{{reference}}.html">{{reference}}.0: {{header}}</a>
-    {{/eachRoot}}
+      <a type="button" class="btn btn-default btn-block" href="section-1.html">1.0: Layout</a>
+      <a type="button" class="btn btn-default btn-block" href="section-2.html">2.0: Buttons</a>
+      <a type="button" class="btn btn-default btn-block" href="section-3.html">3.0: Text Styling</a>
+      <a type="button" class="btn btn-default btn-block" href="section-4.html">4.0: Navigation</a>
+      <a type="button" class="btn btn-default btn-block" href="section-5.html">5.0: Tables</a>
+      <a type="button" class="btn btn-default btn-block" href="section-6.html">6.0: Panels</a>
+      <a type="button" class="btn btn-default btn-block" href="section-7.html">7.0: Icons and Images</a>
+      <a type="button" class="btn btn-default btn-block" href="section-8.html">8.0: Forms</a>
+      <a type="button" class="btn btn-default btn-block" href="section-9.html">9.0: Colors</a>
+      <a type="button" class="btn btn-default btn-block" href="section-10.html">10.0: Examples</a>
   </div>
 </div>
 <div role="main" id="kss-main" class="col-md-9">
   <div id="kss-content">
-  {{#if overview}}
-    <div class="panel panel-default"><div class="panel-body">{{{overview}}}</div></div>
-  {{else}}
 
-    {{!
-      Find each section, in order.
-      If there's no markup or modifiers supplied, use a Markdown-only
-      layout instead.
-
-      The "root" element comes first in this loop, and can be detected using
-      the "#ifDepth 1" block as seen below.
-    }}
-    {{#eachSection rootNumber}}
-      {{#unlessDepth 1}}
-      <section class="kss-depth-{{ refDepth }}">
-      {{/unlessDepth}}
 
       <div class="panel panel-default">
         <div class="panel-body">
-        <h1 class="kss-title"><span class="kss-ref">{{ reference }}{{#ifDepth 1}}.0{{/ifDepth}}</span> - {{ header }}</h1>
+        <h1 class="kss-title"><span class="kss-ref">7.0</span> - Icons and Images</h1>
       
 
-      {{#if description}}
-        <div>{{{description}}}</div>
-      {{/if}}
+        <div><p>Covers the use of visual symbols to indicate various components/items.</p>
+</div>
 
-      {{#if markup}}
+      </div>
+      </div>
+
+      <section class="kss-depth-2">
+
+      <div class="panel panel-default">
+        <div class="panel-body">
+        <h1 class="kss-title"><span class="kss-ref">7.1</span> - Medical Icons</h1>
+      
+
+        <div><p>Icon symbology should be used consistently throughout the site to ensure a cohesive user experience.
+Note:  All icons selected for this set are licensed under the Creative Commons License.</p>
+</div>
+
         <div>
           <div style="border-bottom: 1px solid #ccc;">
             <p>Default styling</p>
-            <div>{{modifierMarkup}}</div>
+            <div><div class="basic-blue {$modifiers}"></div></div>
             <p class="text-right">&nbsp;</p>  
           </div>
-        {{#eachModifier}}
           <div style="border-bottom: 1px solid #ccc;">
-            <p>{{{description}}}</p>
-            <div>{{modifierMarkup}}</div>
-            <p class="text-right">{{name}}</p>
+            <p><p>Allergies and intolerances may be to foods, environmental factors, substances, or medications.  To account for this, a simple icon should be used to universally represent allergies and intolerances when possible.</p>
+</p>
+            <div><div class="basic-blue allergies"></div></div>
+            <p class="text-right">.allergies</p>
           </div>
-        {{/eachModifier}}
+          <div style="border-bottom: 1px solid #ccc;">
+            <p><p>Deeper accent color for heavier visual weight.</p>
+</p>
+            <div><div class="basic-blue deep-blue"></div></div>
+            <p class="text-right">.deep-blue</p>
+          </div>
         </div>
 
         <div>
           <p></p>
-          <pre class="prettyprint lang-html">{{markup}}</pre>
+          <pre class="prettyprint lang-html">&lt;div class=&quot;basic-blue {$modifiers}&quot;&gt;&lt;/div&gt;</pre>
         </div>
-      {{/if}}
       </div>
       </div>
 
-      {{#unlessDepth 1}}
       </section>
-      {{/unlessDepth}}
-    {{/eachSection}}
-  {{/if}}
   </div>
 </div>
 
