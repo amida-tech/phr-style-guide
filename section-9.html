@@ -11,10 +11,44 @@
   <meta name="generator" content="kss-node" />
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="public/style.css">
-  <link rel="stylesheet" href="public/kss.css">
 </head>
 <body>
+
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
 <div id="kss-wrapper" class="container-fluid" style="margin: 20px 0px;">
+
 <div id="kss-nav" class="col-md-3">
   <div id="kss-header" class="panel panel-default">
     <h3 class="text-center">Style Guide</h3>
@@ -42,7 +76,7 @@
         <h1 class="kss-title"><span class="kss-ref">9.0</span> - Colors</h1>
       
 
-        <div class="kss-box"><p>The colors to be used on the site.  These colors should generally inherit to the rest of the site.
+        <div><p>The colors to be used on the site.  These colors should generally inherit to the rest of the site.
 Grayscale elements aren&#39;t defined in this area; instead they are referenced by component.</p>
 </div>
 
@@ -56,33 +90,34 @@ Grayscale elements aren&#39;t defined in this area; instead they are referenced 
         <h1 class="kss-title"><span class="kss-ref">9.1</span> - Color Scheme</h1>
       
 
-        <div class="kss-box"><p>The site&#39;s overall color scheme should create a calming experience to clearly convey health information
+        <div><p>The site&#39;s overall color scheme should create a calming experience to clearly convey health information
 without creating undue sensations of alarm or excitement.  A monochromatic color scheme of a subtle blue shades
 serves this purpose well.  By having a muted basic color scheme, we can better accent critical components
 of health data.</p>
 </div>
 
-        <table class="kss-mod-list table">
-          <tr class="kss-mod-desc-group">
-            <td><div class="color-sample {$modifiers}"></div></td>
-            <td class="kss-mod-desc"><p>Default styling</p></td>
-            <td class="kss-mod-name"></td>  
-          </tr>
-          <tr class="kss-mod-desc-group">
-            <td><div class="color-sample light-blue"></div></td>
-            <td class="kss-mod-desc"><p>Lighter accent color for less visual weight.</p>
-</td>
-            <td class="kss-mod-name"><p>.light-blue</p></td>
-          </tr>
-          <tr class="kss-mod-desc-group">
-            <td><div class="color-sample deep-blue"></div></td>
-            <td class="kss-mod-desc"><p>Deeper accent color for heavier visual weight.</p>
-</td>
-            <td class="kss-mod-name"><p>.deep-blue</p></td>
-          </tr>
-        </table>
+        <div>
+          <div style="border-bottom: 1px solid #ccc;">
+            <p>Default styling</p>
+            <div><div class="color-sample {$modifiers}"></div></div>
+            <p class="text-right">&nbsp;</p>  
+          </div>
+          <div style="border-bottom: 1px solid #ccc;">
+            <p><p>Lighter accent color for less visual weight.</p>
+</p>
+            <div><div class="color-sample light-blue"></div></div>
+            <p class="text-right">.light-blue</p>
+          </div>
+          <div style="border-bottom: 1px solid #ccc;">
+            <p><p>Deeper accent color for heavier visual weight.</p>
+</p>
+            <div><div class="color-sample deep-blue"></div></div>
+            <p class="text-right">.deep-blue</p>
+          </div>
+        </div>
 
-        <div class="kss-markup">
+        <div>
+          <p></p>
           <pre class="prettyprint lang-html">&lt;div class=&quot;color-sample {$modifiers}&quot;&gt;&lt;/div&gt;</pre>
         </div>
       </div>
@@ -96,32 +131,33 @@ of health data.</p>
         <h1 class="kss-title"><span class="kss-ref">9.2</span> - Contrasting Colors</h1>
       
 
-        <div class="kss-box"><p>Several contrasting colors can be used to highlight important information; for instance stress alerts<br>about dangerous test results, or warn about changes or action which might be required.  These colors are 
+        <div><p>Several contrasting colors can be used to highlight important information; for instance stress alerts<br>about dangerous test results, or warn about changes or action which might be required.  These colors are 
 complementary to the base colors to drive contrast, and should be used very sparingly.
 These colors should be presented contrasting with the base colors.</p>
 </div>
 
-        <table class="kss-mod-list table">
-          <tr class="kss-mod-desc-group">
-            <td><div class="color-sample {$modifiers}"></div></td>
-            <td class="kss-mod-desc"><p>Default styling</p></td>
-            <td class="kss-mod-name"></td>  
-          </tr>
-          <tr class="kss-mod-desc-group">
-            <td><div class="color-sample basic-orange"></div></td>
-            <td class="kss-mod-desc"><p>Muted Orange for standard colors/general alerts.</p>
-</td>
-            <td class="kss-mod-name"><p>.basic-orange</p></td>
-          </tr>
-          <tr class="kss-mod-desc-group">
-            <td><div class="color-sample dark-orange"></div></td>
-            <td class="kss-mod-desc"><p>Intense Orange color for extreme contrast, should be used very sparingly.</p>
-</td>
-            <td class="kss-mod-name"><p>.dark-orange</p></td>
-          </tr>
-        </table>
+        <div>
+          <div style="border-bottom: 1px solid #ccc;">
+            <p>Default styling</p>
+            <div><div class="color-sample {$modifiers}"></div></div>
+            <p class="text-right">&nbsp;</p>  
+          </div>
+          <div style="border-bottom: 1px solid #ccc;">
+            <p><p>Muted Orange for standard colors/general alerts.</p>
+</p>
+            <div><div class="color-sample basic-orange"></div></div>
+            <p class="text-right">.basic-orange</p>
+          </div>
+          <div style="border-bottom: 1px solid #ccc;">
+            <p><p>Intense Orange color for extreme contrast, should be used very sparingly.</p>
+</p>
+            <div><div class="color-sample dark-orange"></div></div>
+            <p class="text-right">.dark-orange</p>
+          </div>
+        </div>
 
-        <div class="kss-markup">
+        <div>
+          <p></p>
           <pre class="prettyprint lang-html">&lt;div class=&quot;color-sample {$modifiers}&quot;&gt;&lt;/div&gt;</pre>
         </div>
       </div>
@@ -132,33 +168,10 @@ These colors should be presented contrasting with the base colors.</p>
 </div>
 
 <!-- SCRIPTS -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="public/bootstrap.js"></script>
 <script src="public/kss.js"></script>
 <!--<script src="public/prettify.js"></script>-->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script>
-  $(document).ready(function(){
-    var sidebarAdjust = function() {
-      // Match footer/body height
-      var height = Math.max($(window).height(), $('#kss-main').height());
-
-      if ($(window).width() <= 768) {
-        $('#kss-main, #kss-nav').height('auto');
-      } else {
-        $('#kss-main, #kss-nav').height(height);
-      }
-    };
-
-    $(window).resize(sidebarAdjust);
-    $(window).scroll(sidebarAdjust);
-    sidebarAdjust();
-
-    // Ensure code blocks are highlighted properly...
-    $('pre>code').addClass('prettyprint');
-    prettyPrint();
-  });
-</script>
-
 
 </div></body>
 </html>

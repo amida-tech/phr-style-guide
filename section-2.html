@@ -11,10 +11,44 @@
   <meta name="generator" content="kss-node" />
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="public/style.css">
-  <link rel="stylesheet" href="public/kss.css">
 </head>
 <body>
+
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
 <div id="kss-wrapper" class="container-fluid" style="margin: 20px 0px;">
+
 <div id="kss-nav" class="col-md-3">
   <div id="kss-header" class="panel panel-default">
     <h3 class="text-center">Style Guide</h3>
@@ -42,7 +76,7 @@
         <h1 class="kss-title"><span class="kss-ref">2.0</span> - Buttons</h1>
       
 
-        <div class="kss-box"><p>Clickable buttons for use throughout the site </p>
+        <div><p>Clickable buttons for use throughout the site </p>
 </div>
 
       </div>
@@ -55,30 +89,31 @@
         <h1 class="kss-title"><span class="kss-ref">2.1</span> - Default Buttons</h1>
       
 
-        <div class="kss-box"><p>Standard site button</p>
+        <div><p>Standard site button</p>
 </div>
 
-        <table class="kss-mod-list table">
-          <tr class="kss-mod-desc-group">
-            <td><button class="btn btn-default {$modifiers}">Click Me!</button></td>
-            <td class="kss-mod-desc"><p>Default styling</p></td>
-            <td class="kss-mod-name"></td>  
-          </tr>
-          <tr class="kss-mod-desc-group">
-            <td><button class="btn btn-default active">Click Me!</button></td>
-            <td class="kss-mod-desc"><p>Active</p>
-</td>
-            <td class="kss-mod-name"><p>.active</p></td>
-          </tr>
-          <tr class="kss-mod-desc-group">
-            <td><button class="btn btn-default disabled">Click Me!</button></td>
-            <td class="kss-mod-desc"><p>Disabled</p>
-</td>
-            <td class="kss-mod-name"><p>.disabled</p></td>
-          </tr>
-        </table>
+        <div>
+          <div style="border-bottom: 1px solid #ccc;">
+            <p>Default styling</p>
+            <div><button class="btn btn-default {$modifiers}">Click Me!</button></div>
+            <p class="text-right">&nbsp;</p>  
+          </div>
+          <div style="border-bottom: 1px solid #ccc;">
+            <p><p>Active</p>
+</p>
+            <div><button class="btn btn-default active">Click Me!</button></div>
+            <p class="text-right">.active</p>
+          </div>
+          <div style="border-bottom: 1px solid #ccc;">
+            <p><p>Disabled</p>
+</p>
+            <div><button class="btn btn-default disabled">Click Me!</button></div>
+            <p class="text-right">.disabled</p>
+          </div>
+        </div>
 
-        <div class="kss-markup">
+        <div>
+          <p></p>
           <pre class="prettyprint lang-html">&lt;button class=&quot;btn btn-default {$modifiers}&quot;&gt;Click Me!&lt;/button&gt;</pre>
         </div>
       </div>
@@ -92,30 +127,31 @@
         <h1 class="kss-title"><span class="kss-ref">2.2</span> - Primary Buttons</h1>
       
 
-        <div class="kss-box"><p>Provides extra visual weight and identifies the primary action in a set of buttons</p>
+        <div><p>Provides extra visual weight and identifies the primary action in a set of buttons</p>
 </div>
 
-        <table class="kss-mod-list table">
-          <tr class="kss-mod-desc-group">
-            <td><button class="btn btn-primary {$modifiers}">Click Me!</button></td>
-            <td class="kss-mod-desc"><p>Default styling</p></td>
-            <td class="kss-mod-name"></td>  
-          </tr>
-          <tr class="kss-mod-desc-group">
-            <td><button class="btn btn-primary active">Click Me!</button></td>
-            <td class="kss-mod-desc"><p>Active</p>
-</td>
-            <td class="kss-mod-name"><p>.active</p></td>
-          </tr>
-          <tr class="kss-mod-desc-group">
-            <td><button class="btn btn-primary disabled">Click Me!</button></td>
-            <td class="kss-mod-desc"><p>Disabled</p>
-</td>
-            <td class="kss-mod-name"><p>.disabled</p></td>
-          </tr>
-        </table>
+        <div>
+          <div style="border-bottom: 1px solid #ccc;">
+            <p>Default styling</p>
+            <div><button class="btn btn-primary {$modifiers}">Click Me!</button></div>
+            <p class="text-right">&nbsp;</p>  
+          </div>
+          <div style="border-bottom: 1px solid #ccc;">
+            <p><p>Active</p>
+</p>
+            <div><button class="btn btn-primary active">Click Me!</button></div>
+            <p class="text-right">.active</p>
+          </div>
+          <div style="border-bottom: 1px solid #ccc;">
+            <p><p>Disabled</p>
+</p>
+            <div><button class="btn btn-primary disabled">Click Me!</button></div>
+            <p class="text-right">.disabled</p>
+          </div>
+        </div>
 
-        <div class="kss-markup">
+        <div>
+          <p></p>
           <pre class="prettyprint lang-html">&lt;button class=&quot;btn btn-primary {$modifiers}&quot;&gt;Click Me!&lt;/button&gt;</pre>
         </div>
       </div>
@@ -129,30 +165,31 @@
         <h1 class="kss-title"><span class="kss-ref">2.3</span> - Success Buttons</h1>
       
 
-        <div class="kss-box"><p>Indicates a successful or positive action</p>
+        <div><p>Indicates a successful or positive action</p>
 </div>
 
-        <table class="kss-mod-list table">
-          <tr class="kss-mod-desc-group">
-            <td><button class="btn btn-success {$modifiers}">Click Me!</button></td>
-            <td class="kss-mod-desc"><p>Default styling</p></td>
-            <td class="kss-mod-name"></td>  
-          </tr>
-          <tr class="kss-mod-desc-group">
-            <td><button class="btn btn-success active">Click Me!</button></td>
-            <td class="kss-mod-desc"><p>Active</p>
-</td>
-            <td class="kss-mod-name"><p>.active</p></td>
-          </tr>
-          <tr class="kss-mod-desc-group">
-            <td><button class="btn btn-success disabled">Click Me!</button></td>
-            <td class="kss-mod-desc"><p>Disabled</p>
-</td>
-            <td class="kss-mod-name"><p>.disabled</p></td>
-          </tr>
-        </table>
+        <div>
+          <div style="border-bottom: 1px solid #ccc;">
+            <p>Default styling</p>
+            <div><button class="btn btn-success {$modifiers}">Click Me!</button></div>
+            <p class="text-right">&nbsp;</p>  
+          </div>
+          <div style="border-bottom: 1px solid #ccc;">
+            <p><p>Active</p>
+</p>
+            <div><button class="btn btn-success active">Click Me!</button></div>
+            <p class="text-right">.active</p>
+          </div>
+          <div style="border-bottom: 1px solid #ccc;">
+            <p><p>Disabled</p>
+</p>
+            <div><button class="btn btn-success disabled">Click Me!</button></div>
+            <p class="text-right">.disabled</p>
+          </div>
+        </div>
 
-        <div class="kss-markup">
+        <div>
+          <p></p>
           <pre class="prettyprint lang-html">&lt;button class=&quot;btn btn-success {$modifiers}&quot;&gt;Click Me!&lt;/button&gt;</pre>
         </div>
       </div>
@@ -166,30 +203,31 @@
         <h1 class="kss-title"><span class="kss-ref">2.4</span> - Info Buttons</h1>
       
 
-        <div class="kss-box"><p>Contextual button for informational alert messages</p>
+        <div><p>Contextual button for informational alert messages</p>
 </div>
 
-        <table class="kss-mod-list table">
-          <tr class="kss-mod-desc-group">
-            <td><button class="btn btn-info {$modifiers}">Click Me!</button></td>
-            <td class="kss-mod-desc"><p>Default styling</p></td>
-            <td class="kss-mod-name"></td>  
-          </tr>
-          <tr class="kss-mod-desc-group">
-            <td><button class="btn btn-info active">Click Me!</button></td>
-            <td class="kss-mod-desc"><p>Active</p>
-</td>
-            <td class="kss-mod-name"><p>.active</p></td>
-          </tr>
-          <tr class="kss-mod-desc-group">
-            <td><button class="btn btn-info disabled">Click Me!</button></td>
-            <td class="kss-mod-desc"><p>Disabled</p>
-</td>
-            <td class="kss-mod-name"><p>.disabled</p></td>
-          </tr>
-        </table>
+        <div>
+          <div style="border-bottom: 1px solid #ccc;">
+            <p>Default styling</p>
+            <div><button class="btn btn-info {$modifiers}">Click Me!</button></div>
+            <p class="text-right">&nbsp;</p>  
+          </div>
+          <div style="border-bottom: 1px solid #ccc;">
+            <p><p>Active</p>
+</p>
+            <div><button class="btn btn-info active">Click Me!</button></div>
+            <p class="text-right">.active</p>
+          </div>
+          <div style="border-bottom: 1px solid #ccc;">
+            <p><p>Disabled</p>
+</p>
+            <div><button class="btn btn-info disabled">Click Me!</button></div>
+            <p class="text-right">.disabled</p>
+          </div>
+        </div>
 
-        <div class="kss-markup">
+        <div>
+          <p></p>
           <pre class="prettyprint lang-html">&lt;button class=&quot;btn btn-info {$modifiers}&quot;&gt;Click Me!&lt;/button&gt;</pre>
         </div>
       </div>
@@ -203,30 +241,31 @@
         <h1 class="kss-title"><span class="kss-ref">2.5</span> - Warning Buttons</h1>
       
 
-        <div class="kss-box"><p>Indicates caution should be taken with this action</p>
+        <div><p>Indicates caution should be taken with this action</p>
 </div>
 
-        <table class="kss-mod-list table">
-          <tr class="kss-mod-desc-group">
-            <td><button class="btn btn-warning {$modifiers}">Click Me!</button></td>
-            <td class="kss-mod-desc"><p>Default styling</p></td>
-            <td class="kss-mod-name"></td>  
-          </tr>
-          <tr class="kss-mod-desc-group">
-            <td><button class="btn btn-warning active">Click Me!</button></td>
-            <td class="kss-mod-desc"><p>Active</p>
-</td>
-            <td class="kss-mod-name"><p>.active</p></td>
-          </tr>
-          <tr class="kss-mod-desc-group">
-            <td><button class="btn btn-warning disabled">Click Me!</button></td>
-            <td class="kss-mod-desc"><p>Disabled</p>
-</td>
-            <td class="kss-mod-name"><p>.disabled</p></td>
-          </tr>
-        </table>
+        <div>
+          <div style="border-bottom: 1px solid #ccc;">
+            <p>Default styling</p>
+            <div><button class="btn btn-warning {$modifiers}">Click Me!</button></div>
+            <p class="text-right">&nbsp;</p>  
+          </div>
+          <div style="border-bottom: 1px solid #ccc;">
+            <p><p>Active</p>
+</p>
+            <div><button class="btn btn-warning active">Click Me!</button></div>
+            <p class="text-right">.active</p>
+          </div>
+          <div style="border-bottom: 1px solid #ccc;">
+            <p><p>Disabled</p>
+</p>
+            <div><button class="btn btn-warning disabled">Click Me!</button></div>
+            <p class="text-right">.disabled</p>
+          </div>
+        </div>
 
-        <div class="kss-markup">
+        <div>
+          <p></p>
           <pre class="prettyprint lang-html">&lt;button class=&quot;btn btn-warning {$modifiers}&quot;&gt;Click Me!&lt;/button&gt;</pre>
         </div>
       </div>
@@ -240,30 +279,31 @@
         <h1 class="kss-title"><span class="kss-ref">2.6</span> - Danger Buttons</h1>
       
 
-        <div class="kss-box"><p>Indicates a dangerous or potentially negative action</p>
+        <div><p>Indicates a dangerous or potentially negative action</p>
 </div>
 
-        <table class="kss-mod-list table">
-          <tr class="kss-mod-desc-group">
-            <td><button class="btn btn-danger {$modifiers}">Click Me!</button></td>
-            <td class="kss-mod-desc"><p>Default styling</p></td>
-            <td class="kss-mod-name"></td>  
-          </tr>
-          <tr class="kss-mod-desc-group">
-            <td><button class="btn btn-danger active">Click Me!</button></td>
-            <td class="kss-mod-desc"><p>Active</p>
-</td>
-            <td class="kss-mod-name"><p>.active</p></td>
-          </tr>
-          <tr class="kss-mod-desc-group">
-            <td><button class="btn btn-danger disabled">Click Me!</button></td>
-            <td class="kss-mod-desc"><p>Disabled</p>
-</td>
-            <td class="kss-mod-name"><p>.disabled</p></td>
-          </tr>
-        </table>
+        <div>
+          <div style="border-bottom: 1px solid #ccc;">
+            <p>Default styling</p>
+            <div><button class="btn btn-danger {$modifiers}">Click Me!</button></div>
+            <p class="text-right">&nbsp;</p>  
+          </div>
+          <div style="border-bottom: 1px solid #ccc;">
+            <p><p>Active</p>
+</p>
+            <div><button class="btn btn-danger active">Click Me!</button></div>
+            <p class="text-right">.active</p>
+          </div>
+          <div style="border-bottom: 1px solid #ccc;">
+            <p><p>Disabled</p>
+</p>
+            <div><button class="btn btn-danger disabled">Click Me!</button></div>
+            <p class="text-right">.disabled</p>
+          </div>
+        </div>
 
-        <div class="kss-markup">
+        <div>
+          <p></p>
           <pre class="prettyprint lang-html">&lt;button class=&quot;btn btn-danger {$modifiers}&quot;&gt;Click Me!&lt;/button&gt;</pre>
         </div>
       </div>
@@ -277,30 +317,31 @@
         <h1 class="kss-title"><span class="kss-ref">2.7</span> - Link Buttons</h1>
       
 
-        <div class="kss-box"><p>Make a button look and behave like a link</p>
+        <div><p>Make a button look and behave like a link</p>
 </div>
 
-        <table class="kss-mod-list table">
-          <tr class="kss-mod-desc-group">
-            <td><button class="btn btn-link {$modifiers}">Click Me!</button></td>
-            <td class="kss-mod-desc"><p>Default styling</p></td>
-            <td class="kss-mod-name"></td>  
-          </tr>
-          <tr class="kss-mod-desc-group">
-            <td><button class="btn btn-link active">Click Me!</button></td>
-            <td class="kss-mod-desc"><p>Active</p>
-</td>
-            <td class="kss-mod-name"><p>.active</p></td>
-          </tr>
-          <tr class="kss-mod-desc-group">
-            <td><button class="btn btn-link disabled">Click Me!</button></td>
-            <td class="kss-mod-desc"><p>Disabled</p>
-</td>
-            <td class="kss-mod-name"><p>.disabled</p></td>
-          </tr>
-        </table>
+        <div>
+          <div style="border-bottom: 1px solid #ccc;">
+            <p>Default styling</p>
+            <div><button class="btn btn-link {$modifiers}">Click Me!</button></div>
+            <p class="text-right">&nbsp;</p>  
+          </div>
+          <div style="border-bottom: 1px solid #ccc;">
+            <p><p>Active</p>
+</p>
+            <div><button class="btn btn-link active">Click Me!</button></div>
+            <p class="text-right">.active</p>
+          </div>
+          <div style="border-bottom: 1px solid #ccc;">
+            <p><p>Disabled</p>
+</p>
+            <div><button class="btn btn-link disabled">Click Me!</button></div>
+            <p class="text-right">.disabled</p>
+          </div>
+        </div>
 
-        <div class="kss-markup">
+        <div>
+          <p></p>
           <pre class="prettyprint lang-html">&lt;button class=&quot;btn btn-link {$modifiers}&quot;&gt;Click Me!&lt;/button&gt;</pre>
         </div>
       </div>
@@ -311,33 +352,10 @@
 </div>
 
 <!-- SCRIPTS -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="public/bootstrap.js"></script>
 <script src="public/kss.js"></script>
 <!--<script src="public/prettify.js"></script>-->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script>
-  $(document).ready(function(){
-    var sidebarAdjust = function() {
-      // Match footer/body height
-      var height = Math.max($(window).height(), $('#kss-main').height());
-
-      if ($(window).width() <= 768) {
-        $('#kss-main, #kss-nav').height('auto');
-      } else {
-        $('#kss-main, #kss-nav').height(height);
-      }
-    };
-
-    $(window).resize(sidebarAdjust);
-    $(window).scroll(sidebarAdjust);
-    sidebarAdjust();
-
-    // Ensure code blocks are highlighted properly...
-    $('pre>code').addClass('prettyprint');
-    prettyPrint();
-  });
-</script>
-
 
 </div></body>
 </html>
