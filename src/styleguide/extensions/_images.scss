@@ -20,9 +20,15 @@
 // Styleguide 1.1
 //
 
-.img-navbar {
-	//width: 30px;
-	max-height: 20px;
-	@extend .img-rounded;
-	margin: 0 10px;
+.img-navbar-avatar {
+	max-width: 30px;
+	max-height: 30px;
+	@extend .img-circle;
+	margin: 10px;
+}
+
+.img-navbar-logo {
+	max-width: 30px;
+	max-height: 30px;
+	margin: -5px 10px;
 }
