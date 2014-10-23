@@ -6,7 +6,7 @@
 // Markup:
 // <div class="profile">
 //   <div class="profile-body">
-//     <div class="profile-image col-sm-3">
+//     <div class="profile-image col-sm-2">
 //       <img class="img-responsive profile-image" src="public/img/img-demo.png">
 //     </div>
 //     <div class="profile-content col-sm-9">
@@ -40,7 +40,6 @@
 		  max-height: 100px;
 		  @extend .img-circle;
 		}
-
 		@media (max-width: $screen-sm-min) {
           @include center-block();
         }
@@ -49,6 +48,8 @@
 	}
 
 	.profile-content {
+		margin-left: 10px;
+
 	}
 
 }
