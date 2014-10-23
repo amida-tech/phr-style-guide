@@ -1,10 +1,11 @@
 
-// Main Navigation
+// Primary Navigation
 //
 // A primary navigaton bar across the top of the page provides a static placeholder for information, while freeing up the body of the site for the display of content specific information.
 //
 // In applications which have multiple users, and in which a user may be viewing records of various individuals, it is important to differentiate between the current user and the record of the individual.  A common design practice is to embed the current user's information in the navigation bar.  This provides user-level context and will allow a system user to visually differentiate between themselves, and the individual associated with any given record.
 //
+// If search is a feature of the site, it should be incorporated into the navigation bar.  This will allow easy access from any area of the site.
 //
 // Markup:
 // <nav class="navbar navbar-default" role="navigation">
@@ -16,13 +17,19 @@
 //        <span class="icon-bar"></span>
 //        <span class="icon-bar"></span>
 //      </button>
-//      <a class="navbar-brand" href="#">Brand</a>
+//      <a class="navbar-brand" href="#"><img class="img-navbar-logo" src="public/img/bb-logo-vector.png"></a>
 //    </div>
 //    <div class="collapse navbar-collapse" id="example-1">
+//      <ul class="nav navbar-nav">
+//        <li><a href="#">Link #1</a></li>
+//        <li><a href="#">Link #2</a></li>
+//      </ul>
 //      <ul class="nav navbar-nav navbar-right">
-//        <li><a href="#">Link</a></li>
+//        <li>
+//          <img class="img-navbar-avatar" src="public/img/img-demo.png">
+//        </li>
 //        <li class="dropdown">
-//          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img class="img-navbar" src="public/img/img-demo.png"> Suzie Demo <span class="caret"></span></a>
+//          <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Suzie Demo <span class="caret"></span></a>
 //          <ul class="dropdown-menu" role="menu">
 //            <li><a href="#">Action</a></li>
 //            <li><a href="#">Another action</a></li>
