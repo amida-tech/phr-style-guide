@@ -1,25 +1,4 @@
 
-// Responsive Design.
-//
-// Supporting multiple device form factors is critical for the display of health records.  For instance, records are frequently viewed on mobile phones during encouters with medical providers.
-// 
-// To gracefully degrade, this style guide suggests the use of the responsive grid system in Twitter Bootstrap.
-// This system uses media query break points to trigger degradation across devices of nearly any form factor.
-// More information on the responsive grid system can be found at [getbootstrap.com](http://www.getbootstrap.com).
-// 
-// As a general rule, care must be taken to ensure there isn't a loss of information during transition between form factors.  Details about a record component, for example an allergy's reactions, if not immediately viewable following transition must still be accessible.  This means clear visual indicators for a user to access collapsed or hidden data.
-//
-// Note how by adjusting the browser window, the below blocks dynamically stack. 
-//
-// Markup:
-// <div class="col-md-12">
-//   <div class="col-md-6"><button type="button" class="btn btn-primary btn-block">Block One</button></div>
-//   <div class="col-md-6"><button type="button" class="btn btn-default btn-block">Block Two</button></div>
-// </div>
-//
-// Styleguide 1.1
-//
-
 .img-navbar-avatar {
 	max-width: 30px;
 	max-height: 30px;

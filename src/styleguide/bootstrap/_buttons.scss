@@ -47,7 +47,7 @@
 
 // Default Buttons
 //
-// Standard site button
+// The standard site button.  This should generally be used either in navigational components, or non-action oriented buttons (ex. Cancel).
 //
 // Markup:
 // <button class="btn btn-default {$modifiers}">Click Me!</button>
@@ -64,7 +64,7 @@
 
 // Primary Buttons
 //
-// Provides extra visual weight and identifies the primary action in a set of buttons
+// The primary buttons should be used for action oriented buttons which do not result in direct data manipulation (ex. Login).
 //
 // Markup:
 // <button class="btn btn-primary {$modifiers}">Click Me!</button>
@@ -83,7 +83,7 @@
 
 // Success Buttons
 //
-// Indicates a successful or positive action
+// Success buttons should be used for positive actions which directly manipulate data and/or conclude a process (ex. Save Updates).
 //
 // Markup:
 // <button class="btn btn-success {$modifiers}">Click Me!</button>
@@ -100,7 +100,7 @@
 
 // Info Buttons
 //
-// Contextual button for informational alert messages
+// Info buttons should be used in actions which don't directly manipulate data or perform actions, but rather provide context (ex. Review Record Sources).
 //
 // Markup:
 // <button class="btn btn-info {$modifiers}">Click Me!</button>
@@ -117,7 +117,7 @@
 
 // Warning Buttons
 //
-// Indicates caution should be taken with this action
+// Warning buttons should be used when a data-manipulating action may produce results not anticipated by the user (ex. Change Username).
 //
 // Markup:
 // <button class="btn btn-warning {$modifiers}">Click Me!</button>
@@ -134,7 +134,7 @@
 
 // Danger Buttons
 //
-// Indicates a dangerous or potentially negative action
+// Danger buttons should be used when an irrevocable data-manipulating action will be taken (ex. Delete Account).
 //
 // Markup:
 // <button class="btn btn-danger {$modifiers}">Click Me!</button>
@@ -151,7 +151,7 @@
 
 // Link Buttons
 //
-// Make a button look and behave like a link
+// Link buttons make a button look and behave like a link.  They should be generally unused, and are included for completeness in this style guide.
 //
 // Markup:
 // <button class="btn btn-link {$modifiers}">Click Me!</button>

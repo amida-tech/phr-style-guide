@@ -37,7 +37,7 @@ $brand-danger:          #d9534f !default;
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-$body-bg:               $brand-blue-light !default;
+$body-bg:               $gray-lighter !default;
 //** Global text color on `<body>`.
 $text-color:            $gray-dark !default;
 
@@ -119,9 +119,9 @@ $padding-xs-horizontal:     5px !default;
 $line-height-large:         1.33 !default;
 $line-height-small:         1.5 !default;
 
-$border-radius-base:        8px !default;
-$border-radius-large:       10px !default;
-$border-radius-small:       6px !default;
+$border-radius-base:        0px !default;
+$border-radius-large:       0px !default;
+$border-radius-small:       0px !default;
 
 //** Global color for active items (e.g., navs or dropdowns).
 $component-active-color:    #fff !default;
