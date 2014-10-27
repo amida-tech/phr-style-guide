@@ -1,13 +1,15 @@
 
 // Secondary Navigation
 //
-// Secondary navigation should be aligned along the left side of the screen
+// Secondary navigation should be used on sub-pages to navigate between various components contained within that area.  For instance, a sub navigation could be used to navigate through various parts of a medical record.
+//
+// If a sub-page requires profile information to be displayed, the navigation should appear below the profile area.
 //
 // Markup:
 // <div class="btn-group-vertical">
-//   <button type="button" class="btn btn-default">Home</button>
-//   <button type="button" class="btn btn-default">My Record</button>
-//   <button type="button" class="btn btn-default">My Files</button>
+//   <button type="button" class="btn btn-default">Allergies</button>
+//   <button type="button" class="btn btn-default">Medications</button>
+//   <button type="button" class="btn btn-default">Lab Results</button>
 // </div>
 //
 // Styleguide 4.3
@@ -15,19 +17,26 @@
 
 // Breadcrumbs
 //
-// The primary navigation of the site should be statically fixed to the top left of the page.
-// The navigation should feature a user picture and name, so at any time there can be certainty as to who's record is being viewed.
-//
+// Breadcrumbs should be included for sections of the site in which a user must drill down into data.  This is necessary in order to provide a clear method for the user to orient themselves and walk backwards if needed.
+// The breadcrumb is secondary content, and should not be contained within a body panel, but rather set against the background directly; it should use the entire width of the page.
+// Breadcrumb links should start a navigational layer below links available from the navigation bar to minimize redundancy.
 //
 // Markup:
-// <div class="btn-group-vertical">
-//   <button type="button" class="btn btn-default">Home</button>
-//   <button type="button" class="btn btn-default">My Record</button>
-//   <button type="button" class="btn btn-default">My Files</button>
+// <div>
+//   <div class="breadcrumb"><a>My Record</a> &gt; <a>Allergies</a> &gt; <a>Review Updates</a></div>
 // </div>
 //
 // Styleguide 4.4
 //
+
+.breadcrumb {
+  @extend .h5;
+  a {
+    cursor: pointer;
+  }
+}
+
+
 
 .nav {
   margin-bottom: 0;

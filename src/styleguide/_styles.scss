@@ -54,7 +54,6 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
 @import url(http://fonts.googleapis.com/css?family=Montserrat);
-@import "extensions/icons";
 @import "extensions/colors";
 @import "extensions/images";
 @import "extensions/profile";
@@ -67,14 +66,14 @@
 
 // Buttons
 // 
-// Clickable buttons for use throughout the site 
+// Clickable buttons used throughout the site.
 // 
 // Styleguide 2.
 
 // Text Styling
 // 
 // This style guide uses open fonts freely available through Google Fonts.
-// These are currently 'Open Sans' and 'Roboto Condensed.'
+// This guide uses 'Open Sans,' 'Montserrat,' and 'Roboto Condensed.'
 // 
 // Styleguide 3.
 
@@ -86,19 +85,22 @@
 
 // Tables
 //
-// Covers the use of visual symbols to indicate various components/items.
+// Tables are used throughout the design to concisely display uncompressed data elements.
 //
 // Styleguide 5.
 
 // Panels
 //
-// Covers the use of visual symbols to indicate various components/items.
+// Panels are used to 'box' information and visually differentiate components.
 //
 // Styleguide 6.
 
-// Icons and Images
+// Icons
 //
-// Covers the use of visual symbols to indicate various components/items.
+// This styleguide uses openly licensed iconography whenever possible for easy reuse across implementations.  
+// The iconography in this guide relies on [Font Awesome](http://fortawesome.github.io/Font-Awesome/), however [Glyphicons](http://glyphicons.com/) and [Foundation Icons](http://zurb.com/playground/foundation-icon-fonts-3) are both excellent openly licensed alternatives.
+//
+// Use of icons should be in implemented in order to visually represent 'shorthand' forms of underlying components when space is at a premium, for instance in mobile views or in a compressed navigation bar.  Additionally, iconography can be used to provide a method of visual 'indexing,' which allows the user to quickly identify a specific area or component of a page.
 //
 // Styleguide 7.
 
@@ -112,13 +114,11 @@
 // Colors
 //
 // The colors to be used on the site.  These colors should generally inherit to the rest of the site.
-// Grayscale elements aren't defined in this area; instead they are referenced by component.
 //
 // Styleguide 9.
 
 // Examples
 //
-// The colors to be used on the site.  These colors should generally inherit to the rest of the site.
-// Grayscale elements aren't defined in this area; instead they are referenced by component.
+// Examples of the elements of this style guide in practice are provided herein.
 //
 // Styleguide 10.

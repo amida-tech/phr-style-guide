@@ -6,10 +6,10 @@
 // Markup:
 // <div class="profile">
 //   <div class="profile-body">
-//     <div class="profile-image col-md-2">
+//     <div class="profile-image col-sm-2">
 //       <img class="img-responsive profile-image" src="public/img/img-demo.png">
 //     </div>
-//     <div class="profile-content col-md-10">
+//     <div class="profile-content col-sm-9">
 //       <h4>Suzie Demo</h4>
 //       <p>suzie@amida-demo.com</p>
 //       <p>Born: 6/25/1982</p>
@@ -28,6 +28,10 @@
 	  @extend .panel-body;
 	  @extend .row;
 	  width: 100%;
+
+	  @media (max-width: $screen-sm-min) {
+        text-align: center;
+      }
     }
 
 	.profile-image {
@@ -36,9 +40,16 @@
 		  max-height: 100px;
 		  @extend .img-circle;
 		}
+		@media (max-width: $screen-sm-min) {
+          @include center-block();
+        }
+
+
 	}
 
 	.profile-content {
+		margin-left: 10px;
+
 	}
 
 }

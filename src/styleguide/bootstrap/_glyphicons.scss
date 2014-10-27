@@ -235,3 +235,153 @@
 .glyphicon-cloud-upload           { &:before { content: "\e198"; } }
 .glyphicon-tree-conifer           { &:before { content: "\e199"; } }
 .glyphicon-tree-deciduous         { &:before { content: "\e200"; } }
+
+// Medical Iconography
+//
+// Consistent use of iconography throughout the site is critical to consistently representing medical components in a record.  The following icons can be used to represent the different components of a medical record.
+//
+// Styleguide 7.1.0
+//
+
+// Allergies
+//
+// Allergies and Intolerances can be of varying degrees and to a wide variety of substances ranging from medications to foods and environmental factors.  As such, it is inappropriate to represent this section as any specific allergen.  Rather, allergies are universally used as warnings, or information an attending caretaker may need to be aware of prior to taking action.  The icons used to represent allergies reflect this approach
+//
+// Markup:
+// <i class="fa fa-exclamation-triangle {$modifiers}"></i>
+// 
+// .fa-3x      - Larger icon size for heavier visual weight.
+// .fa-5x      - Largest icon size for heaviest visual weight.
+//
+// Styleguide 7.1.1
+//
+
+// Encounters
+//
+// Encounters cover past and future visits with a caregiver of some form, or more broadly any interaction with the medical industry.  The most common form of this is a visit to the doctor; however the doctor icon would be better used to represent care providers.  Instead, the stethoscope clearly indicates an encounter by conceptually indicating a tool which would be used in an encounter.
+//
+// Markup:
+// <i class="fa fa-stethoscope {$modifiers}"></i>
+// 
+// .fa-3x      - Larger icon size for heavier visual weight.
+// .fa-5x      - Largest icon size for heaviest visual weight.
+//
+// Styleguide 7.1.2
+//
+
+// Immunizations
+//
+// Immunization activity is often represented as a hypodermic needle.  While this is effective at communicating the most common method of delivery, it creates a sense of anxiety in the user and is disruptive to design.  Instead, iconography should focus on the preventative nature of vaccines.  In this instance, we have chosen a shield to represent immunization activity.
+//
+// Markup:
+// <i class="fa fa-shield {$modifiers}"></i>
+// 
+// .fa-3x      - Larger icon size for heavier visual weight.
+// .fa-5x      - Largest icon size for heaviest visual weight.
+//
+// Styleguide 7.1.3
+//
+
+// Medications
+//
+// Medications can be represented in a number of ways.  This is usually done with the image of a medical pill or a bottle of drugs.  While this might be ideal as it creates a strong mental correlation, there is no freely available vector-font which contains this.  For the sake of keep this styleguide freely adaptable, we have generalized this visualization to a generic medical plus.
+//
+// Markup:
+// <i class="fa fa-plus-circle {$modifiers}"></i>
+// 
+// .fa-3x      - Larger icon size for heavier visual weight.
+// .fa-5x      - Largest icon size for heaviest visual weight.
+//
+// Styleguide 7.1.4
+//
+
+// Problem List/Conditions
+//
+// Problem Lists are generally better to refer to from a patient facing perspective as 'conditions,' as problem list has a negative annotation to it.  As this area is principally a list of current and past diagnoses and treatments, a list icon can be effectively used to represent this section.
+//
+// Markup:
+// <i class="fa fa-list {$modifiers}"></i>
+// 
+// .fa-3x      - Larger icon size for heavier visual weight.
+// .fa-5x      - Largest icon size for heaviest visual weight.
+//
+// Styleguide 7.1.5
+//
+
+// Procedures
+//
+// Procedures are a historical list of performed procedures over time to treat past or current conditions.  While not always invasive, the principle connection with procedures from a patient perspective will involve some form of tool, whether it is a stethoscope or a scalpel.  As such, the Medical kit is used to represent a catch-all of possible tools used in a procedure, linking the iconography to the concept.
+//
+// Markup:
+// <i class="fa fa-medkit {$modifiers}"></i>
+// 
+// .fa-3x      - Larger icon size for heavier visual weight.
+// .fa-5x      - Largest icon size for heaviest visual weight.
+//
+// Styleguide 7.1.6
+//
+
+// Vital Signs
+//
+// The most well known vital sign is heart rate, and the heart has symbolically been a sign of both vitality and mortality.  It is used here to signal the importance to life of the information contained in vital measurements.
+//
+// Markup:
+// <i class="fa fa-heart-o {$modifiers}"></i>
+// 
+// .fa-3x      - Larger icon size for heavier visual weight.
+// .fa-5x      - Largest icon size for heaviest visual weight.
+//
+// Styleguide 7.1.7
+//
+
+// Lab Results
+//
+// Lab Results are in essence vitals which have to be measured by a third party through analysis of collected information.  There is an extra degree of 'science' associated with it, which can be playfully represented using a scientific flask.
+//
+// Markup:
+// <i class="fa fa-flask {$modifiers}"></i>
+// 
+// .fa-3x      - Larger icon size for heavier visual weight.
+// .fa-5x      - Largest icon size for heaviest visual weight.
+//
+// Styleguide 7.1.8
+//
+
+// Social History
+//
+// Social History is data collected which is derived from social patterns, such as drinking and smoking activities.  This is easily represented by a group of individuals.
+//
+// Markup:
+// <i class="fa fa-group {$modifiers}"></i>
+// 
+// .fa-3x      - Larger icon size for heavier visual weight.
+// .fa-5x      - Largest icon size for heaviest visual weight.
+//
+// Styleguide 7.1.9
+//
+
+// Insurance
+//
+// Insurance is typically viewed as a large institution which manages the financial side of healthcare.  This information can be effectively represented by an image of an institution.
+//
+// Markup:
+// <i class="fa fa-institution {$modifiers}"></i>
+// 
+// .fa-3x      - Larger icon size for heavier visual weight.
+// .fa-5x      - Largest icon size for heaviest visual weight.
+//
+// Styleguide 7.1.10
+//
+
+// Insurance Claims
+//
+// Claims data explains reimbursements for billable healthcare activities.  Claims are either 'adjudicated' or not, meaning they have been either been approved and reimbursed, or have not.  Our current data set only accounts for adjudicated claims, which can effectively be represented using a check box.
+//
+// Markup:
+// <i class="fa fa-check-square-o {$modifiers}"></i>
+// 
+// .fa-3x      - Larger icon size for heavier visual weight.
+// .fa-5x      - Largest icon size for heaviest visual weight.
+//
+// Styleguide 7.1.10
+//
