@@ -1,13 +1,13 @@
 // Table formatting
 //
-// The primary navigation of the site should be statically fixed to the top left of the page.
-// The navigation should feature a user picture and name, so at any time there can be certainty as to who's record is being viewed.
+// Tables should be formatted consistently, and gracefully degrade across form factors.
 //
 //
 // Markup:
 // <table class="table">
-//   <thead><td>Contents</td></thead>
-//   <tr><td>Home</td></tr>
+//   <thead><td colspan="3">Sample Header</td></thead>
+//   <tr><td>One Value</td><td>Two Value</td><td>Three Value</td></tr>
+//   <tr><td>Next Value</td><td>Next Two Value</td><td>Next Three Value</td></tr>
 // </table>
 //
 // Styleguide 5.1
@@ -21,6 +21,9 @@ th {
   text-align: left;
 }
 
+thead {
+  @extend .h3;
+}
 
 // Baseline styles
 

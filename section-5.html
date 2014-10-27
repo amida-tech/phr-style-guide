@@ -57,16 +57,16 @@
         <h2 class="kss-title"><span class="kss-ref">5.1</span> - Table formatting</h2>
       
 
-        <div><p>The primary navigation of the site should be statically fixed to the top left of the page.
-The navigation should feature a user picture and name, so at any time there can be certainty as to who&#39;s record is being viewed.</p>
+        <div><p>Tables should be formatted consistently, and gracefully degrade across form factors.</p>
 </div>
 
         <div>
           <div style="border-bottom: 1px solid #ccc;">
             <p>Default styling</p>
             <div><table class="table">
-  <thead><td>Contents</td></thead>
-  <tr><td>Home</td></tr>
+  <thead><td colspan="3">Sample Header</td></thead>
+  <tr><td>One Value</td><td>Two Value</td><td>Three Value</td></tr>
+  <tr><td>Next Value</td><td>Next Two Value</td><td>Next Three Value</td></tr>
 </table></div>
             <p class="text-right">&nbsp;</p>  
           </div>
@@ -75,8 +75,9 @@ The navigation should feature a user picture and name, so at any time there can 
         <div>
           <p></p>
           <pre class="prettyprint lang-html">&lt;table class=&quot;table&quot;&gt;
-  &lt;thead&gt;&lt;td&gt;Contents&lt;/td&gt;&lt;/thead&gt;
-  &lt;tr&gt;&lt;td&gt;Home&lt;/td&gt;&lt;/tr&gt;
+  &lt;thead&gt;&lt;td colspan=&quot;3&quot;&gt;Sample Header&lt;/td&gt;&lt;/thead&gt;
+  &lt;tr&gt;&lt;td&gt;One Value&lt;/td&gt;&lt;td&gt;Two Value&lt;/td&gt;&lt;td&gt;Three Value&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;Next Value&lt;/td&gt;&lt;td&gt;Next Two Value&lt;/td&gt;&lt;td&gt;Next Three Value&lt;/td&gt;&lt;/tr&gt;
 &lt;/table&gt;</pre>
         </div>
       </div>
