@@ -50,6 +50,170 @@
       </div>
       </div>
 
+      <section class="kss-depth-2">
+
+      <div class="panel panel-default">
+        <div class="panel-body">
+        <h2 class="kss-title"><span class="kss-ref">6.1</span> - General Panel Formatting</h2>
+      
+
+
+        <div>
+          <div style="border-bottom: 1px solid #ccc;">
+            <p>Default styling</p>
+            <div><div class="panel panel-default">
+ <div class="panel-heading">
+   <div class="panel-title">Sample Title</div>
+ </div>
+ <div class="panel-body">
+   Content goes here.
+ </div>
+ <div class="panel-footer">This is a footer</div>
+</div></div>
+            <p class="text-right">&nbsp;</p>  
+          </div>
+        </div>
+
+        <div>
+          <p></p>
+          <pre class="prettyprint lang-html">&lt;div class=&quot;panel panel-default&quot;&gt;
+ &lt;div class=&quot;panel-heading&quot;&gt;
+   &lt;div class=&quot;panel-title&quot;&gt;Sample Title&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class=&quot;panel-body&quot;&gt;
+   Content goes here.
+ &lt;/div&gt;
+ &lt;div class=&quot;panel-footer&quot;&gt;This is a footer&lt;/div&gt;
+&lt;/div&gt;</pre>
+        </div>
+      </div>
+      </div>
+
+      </section>
+      <section class="kss-depth-2">
+
+      <div class="panel panel-default">
+        <div class="panel-body">
+        <h2 class="kss-title"><span class="kss-ref">6.2</span> - Paneled Tables</h2>
+      
+
+
+        <div>
+          <div style="border-bottom: 1px solid #ccc;">
+            <p>Default styling</p>
+            <div><div class="panel panel-default">
+ <div class="panel-heading">
+   <div class="panel-title">Sample panel title</div>
+ </div>
+   <table class="table">
+     <tr><td>One Value</td><td>Two Value</td><td>Three Value</td></tr>
+     <tr><td>Next Value</td><td>Next Two Value</td><td>Next Three Value</td></tr>
+   </table>
+   <div class="panel-footer">Panel Footer</div>
+ </div></div>
+            <p class="text-right">&nbsp;</p>  
+          </div>
+        </div>
+
+        <div>
+          <p></p>
+          <pre class="prettyprint lang-html">&lt;div class=&quot;panel panel-default&quot;&gt;
+ &lt;div class=&quot;panel-heading&quot;&gt;
+   &lt;div class=&quot;panel-title&quot;&gt;Sample panel title&lt;/div&gt;
+ &lt;/div&gt;
+   &lt;table class=&quot;table&quot;&gt;
+     &lt;tr&gt;&lt;td&gt;One Value&lt;/td&gt;&lt;td&gt;Two Value&lt;/td&gt;&lt;td&gt;Three Value&lt;/td&gt;&lt;/tr&gt;
+     &lt;tr&gt;&lt;td&gt;Next Value&lt;/td&gt;&lt;td&gt;Next Two Value&lt;/td&gt;&lt;td&gt;Next Three Value&lt;/td&gt;&lt;/tr&gt;
+   &lt;/table&gt;
+   &lt;div class=&quot;panel-footer&quot;&gt;Panel Footer&lt;/div&gt;
+ &lt;/div&gt;</pre>
+        </div>
+      </div>
+      </div>
+
+      </section>
+      <section class="kss-depth-2">
+
+      <div class="panel panel-default">
+        <div class="panel-body">
+        <h2 class="kss-title"><span class="kss-ref">6.3</span> - Collapsable Panels</h2>
+      
+
+
+        <div>
+          <div style="border-bottom: 1px solid #ccc;">
+            <p>Default styling</p>
+            <div><div class="panel-group" id="accordion">
+ <div class="panel panel-default">
+   <div class="panel-heading">
+     <div class="panel-title">
+       <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+         Panel One
+       </a>
+     </div>
+   </div>
+   <div id="collapseOne" class="panel-collapse collapse in">
+     <div class="panel-body">
+       Panel one collapsed content here
+     </div>
+   </div>
+ </div>
+ <div class="panel panel-default">
+   <div class="panel-heading">
+     <div class="panel-title">
+       <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+         Panel Two
+       </a>
+     </div>
+   </div>
+   <div id="collapseTwo" class="panel-collapse collapse">
+     <div class="panel-body">
+       Panel two collapsable content
+     </div>
+   </div>
+ </div>
+</div></div>
+            <p class="text-right">&nbsp;</p>  
+          </div>
+        </div>
+
+        <div>
+          <p></p>
+          <pre class="prettyprint lang-html">&lt;div class=&quot;panel-group&quot; id=&quot;accordion&quot;&gt;
+ &lt;div class=&quot;panel panel-default&quot;&gt;
+   &lt;div class=&quot;panel-heading&quot;&gt;
+     &lt;div class=&quot;panel-title&quot;&gt;
+       &lt;a data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapseOne&quot;&gt;
+         Panel One
+       &lt;/a&gt;
+     &lt;/div&gt;
+   &lt;/div&gt;
+   &lt;div id=&quot;collapseOne&quot; class=&quot;panel-collapse collapse in&quot;&gt;
+     &lt;div class=&quot;panel-body&quot;&gt;
+       Panel one collapsed content here
+     &lt;/div&gt;
+   &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class=&quot;panel panel-default&quot;&gt;
+   &lt;div class=&quot;panel-heading&quot;&gt;
+     &lt;div class=&quot;panel-title&quot;&gt;
+       &lt;a data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapseTwo&quot;&gt;
+         Panel Two
+       &lt;/a&gt;
+     &lt;/div&gt;
+   &lt;/div&gt;
+   &lt;div id=&quot;collapseTwo&quot; class=&quot;panel-collapse collapse&quot;&gt;
+     &lt;div class=&quot;panel-body&quot;&gt;
+       Panel two collapsable content
+     &lt;/div&gt;
+   &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;</pre>
+        </div>
+      </div>
+      </div>
+
+      </section>
   </div>
 </div>
 

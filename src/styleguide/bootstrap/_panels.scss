@@ -50,7 +50,7 @@
 // Markup:
 // <div class="panel panel-default">
 //  <div class="panel-heading">
-//    <h2 class="panel-title">Sample Title</h2>
+//    <div class="panel-title">Sample Title</div>
 //  </div>
 //  <div class="panel-body">
 //    Content goes here.
@@ -205,7 +205,7 @@
 // Markup:
 // <div class="panel panel-default">
 //  <div class="panel-heading">
-//    <h2 class="panel-title">Sample panel title</h2>
+//    <div class="panel-title">Sample panel title</div>
 //  </div>
 //    <table class="table">
 //      <tr><td>One Value</td><td>Two Value</td><td>Three Value</td></tr>
@@ -254,11 +254,11 @@
 // <div class="panel-group" id="accordion">
 //  <div class="panel panel-default">
 //    <div class="panel-heading">
-//      <h4 class="panel-title">
+//      <div class="panel-title">
 //        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
 //          Panel One
 //        </a>
-//      </h4>
+//      </div>
 //    </div>
 //    <div id="collapseOne" class="panel-collapse collapse in">
 //      <div class="panel-body">
@@ -268,11 +268,11 @@
 //  </div>
 //  <div class="panel panel-default">
 //    <div class="panel-heading">
-//      <h4 class="panel-title">
+//      <div class="panel-title">
 //        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
 //          Panel Two
 //        </a>
-//      </h4>
+//      </div>
 //    </div>
 //    <div id="collapseTwo" class="panel-collapse collapse">
 //      <div class="panel-body">
