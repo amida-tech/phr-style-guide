@@ -33,14 +33,17 @@
 //
 // Depending on the section and type of data, some pages might include data visualizations in the body of the page.
 //
+// The below example illustrates these guidelines in a mockup of a patient record visualization.
+//
+// Markup:
+//  <img class="img-responsive" src="public/img/MyRecord.png">
+//
 // Styleguide 1.2
 //
 
 // Footer Usage
 //
 // The footer of the site can be modified further to include additional navigation links such as 'About Us', 'FAQ', and 'Contact Us'. Who and what these links point to depend on the context of the PHR. The basic footer attributes design and development to Amida, noting that the DRE is Open Source and licensed under Creative Commons. It is centered and placed at the foot of the browser.
-//
-//
 //
 // Markup:
 // <div class="container">

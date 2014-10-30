@@ -15,12 +15,13 @@
 </head>
 <body>
 
-<div id="kss-wrapper" class="container-fluid" style="margin: 20px 0px;">
+<div class="container-fluid" style="margin: 20px 0px;">
 
-<div id="kss-nav" class="col-sm-3">
-  <div id="kss-header" class="panel panel-default">
+<div class="col-sm-3">
+  <div class="panel panel-default">
     <h4 class="text-center">Style Guide</h4>
   </div>
+  <div class="panel">
   <div class="btn-group-vertical" style="width: 100%;">
       <a type="button" class="btn btn-default btn-block" href="index.html">0.0: Overview</a>
       <a type="button" class="btn btn-default btn-block" href="section-1.html">1.0: Layout</a>
@@ -30,18 +31,17 @@
       <a type="button" class="btn btn-default btn-block" href="section-5.html">5.0: Tables</a>
       <a type="button" class="btn btn-default btn-block" href="section-6.html">6.0: Panels</a>
       <a type="button" class="btn btn-default btn-block" href="section-7.html">7.0: Icons</a>
-      <a type="button" class="btn btn-default btn-block" href="section-8.html">8.0: Forms</a>
       <a type="button" class="btn btn-default btn-block" href="section-9.html">9.0: Colors</a>
-      <a type="button" class="btn btn-default btn-block" href="section-10.html">10.0: Examples</a>
+  </div>
   </div>
 </div>
-<div role="main" id="kss-main" class="col-sm-9">
-  <div id="kss-content">
+<div role="main" class="col-sm-9">
+  <div>
 
 
       <div class="panel panel-default">
         <div class="panel-body">
-        <h2 class="kss-title"><span class="kss-ref">6.0</span> - Panels</h2>
+        <h2><span>6.0</span> - Panels</h2>
       
 
         <div><p>Panels are used to &#39;box&#39; information and visually differentiate components.</p>
@@ -50,11 +50,47 @@
       </div>
       </div>
 
-      <section class="kss-depth-2">
+      <section>
 
       <div class="panel panel-default">
         <div class="panel-body">
-        <h2 class="kss-title"><span class="kss-ref">6.1</span> - General Panel Formatting</h2>
+        <h2><span>6.1</span> - Container Panel Formatting</h2>
+      
+
+        <div><p> Container panels are used as layout components, encompassing areas of content.  They are given header values using the h2 tag.  Each section in this style guide uses a container panel.</p>
+</div>
+
+        <div>
+          <div style="border-bottom: 1px solid #ccc;">
+            <p>Default styling</p>
+            <div><div class="panel panel-default">
+ <div class="panel-body">
+   <h2>Sample Container Panel</h2>
+   <p>Sample Container Panel Content.</p>
+ </div>
+</div></div>
+            <p class="text-right">&nbsp;</p>  
+          </div>
+        </div>
+
+        <div>
+          <p></p>
+          <pre class="prettyprint lang-html">&lt;div class=&quot;panel panel-default&quot;&gt;
+ &lt;div class=&quot;panel-body&quot;&gt;
+   &lt;h2&gt;Sample Container Panel&lt;/h2&gt;
+   &lt;p&gt;Sample Container Panel Content.&lt;/p&gt;
+ &lt;/div&gt;
+&lt;/div&gt;</pre>
+        </div>
+      </div>
+      </div>
+
+      </section>
+      <section>
+
+      <div class="panel panel-default">
+        <div class="panel-body">
+        <h2><span>6.2</span> - General Panel Formatting</h2>
       
 
 
@@ -90,11 +126,11 @@
       </div>
 
       </section>
-      <section class="kss-depth-2">
+      <section>
 
       <div class="panel panel-default">
         <div class="panel-body">
-        <h2 class="kss-title"><span class="kss-ref">6.2</span> - Paneled Tables</h2>
+        <h2><span>6.3</span> - Paneled Tables</h2>
       
 
         <div><p>Add visual structure to information with multiple components.</p>
@@ -134,11 +170,11 @@
       </div>
 
       </section>
-      <section class="kss-depth-2">
+      <section>
 
       <div class="panel panel-default">
         <div class="panel-body">
-        <h2 class="kss-title"><span class="kss-ref">6.3</span> - Collapsable Panels</h2>
+        <h2><span>6.4</span> - Collapsable Panels</h2>
       
 
         <div><p>Collapsing a panel reduces information-overload by hiding components that are less relevant.</p>

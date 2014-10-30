@@ -15,21 +15,23 @@
 </head>
 <body>
 
-<div id="kss-wrapper" class="container-fluid" style="margin: 20px 0px;">
+<div class="container-fluid" style="margin: 20px 0px;">
 
-<div id="kss-nav" class="col-sm-3">
-  <div id="kss-header" class="panel panel-default">
+<div class="col-sm-3">
+  <div class="panel panel-default">
     <h4 class="text-center">Style Guide</h4>
   </div>
+  <div class="panel">
   <div class="btn-group-vertical" style="width: 100%;">
       <a type="button" class="btn btn-default btn-block" href="index.html">0.0: Overview</a>
     {{#eachRoot}}
       <a type="button" class="btn btn-default btn-block" href="section-{{reference}}.html">{{reference}}.0: {{header}}</a>
     {{/eachRoot}}
   </div>
+  </div>
 </div>
-<div role="main" id="kss-main" class="col-sm-9">
-  <div id="kss-content">
+<div role="main" class="col-sm-9">
+  <div>
   {{#if overview}}
     <div class="panel panel-default"><div class="panel-body">{{{overview}}}</div></div>
   {{else}}
@@ -44,12 +46,12 @@
     }}
     {{#eachSection rootNumber}}
       {{#unlessDepth 1}}
-      <section class="kss-depth-{{ refDepth }}">
+      <section>
       {{/unlessDepth}}
 
       <div class="panel panel-default">
         <div class="panel-body">
-        <h2 class="kss-title"><span class="kss-ref">{{ reference }}{{#ifDepth 1}}.0{{/ifDepth}}</span> - {{ header }}</h2>
+        <h2><span>{{ reference }}{{#ifDepth 1}}.0{{/ifDepth}}</span> - {{ header }}</h2>
       
 
       {{#if description}}
