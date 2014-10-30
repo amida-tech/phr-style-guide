@@ -30,7 +30,6 @@
       <a type="button" class="btn btn-default btn-block" href="section-5.html">5.0: Tables</a>
       <a type="button" class="btn btn-default btn-block" href="section-6.html">6.0: Panels</a>
       <a type="button" class="btn btn-default btn-block" href="section-7.html">7.0: Icons</a>
-      <a type="button" class="btn btn-default btn-block" href="section-8.html">8.0: Forms</a>
       <a type="button" class="btn btn-default btn-block" href="section-9.html">9.0: Colors</a>
       <a type="button" class="btn btn-default btn-block" href="section-10.html">10.0: Examples</a>
   </div>
@@ -62,7 +61,7 @@
 This system uses media query break points to trigger degradation across devices of nearly any form factor.
 More information on the responsive grid system can be found at <a href="http://www.getbootstrap.com">getbootstrap.com</a>.</p>
 <p>As a general rule, care must be taken to ensure there isn&#39;t a loss of information during transition between form factors.  Details about a record component, for example an allergy&#39;s reactions, if not immediately viewable following transition must still be accessible.  This means clear visual indicators for a user to access collapsed or hidden data.</p>
-<p>Note how by adjusting the browser window, the below blocks dynamically stack.</p>
+<p>Note how by adjusting the browser window, the below blocks dynamically stack. </p>
 </div>
 
         <div>
@@ -94,11 +93,26 @@ More information on the responsive grid system can be found at <a href="http://w
         <h2 class="kss-title"><span class="kss-ref">1.2</span> - Page Structure</h2>
       
 
-        <div><p>The primary navigation of the site should be statically fixed to the top left of the page. The navigation should feature a user picture and name, so at any time there can be certainty as to who&#39;s record is being viewed. Each page will also include a footer, and a side navigation related to the content of the page. For example, pages related to &#39;My Record&#39; will have a left-side navigation linking to the different sections of a users record (Allergies, Encounters, etc).</p>
-<p>Pages related to Insurance will have the Billing side navigation bar.
-There should be plenty of negative space to reduce confusion and better orient a user. In addition to the top and left-side navigation bars, each page will have a header and breadcrumbs so a user is aware of their location within the site and how that point was reached.</p>
+        <div><p>The primary navigation of the site should be statically fixed to the top and left side of the page. The navigation should feature a user picture and name, so at any time there can be certainty as to whose record is being viewed. </p>
+<p>The navigation fixed to the top will be constant through all pages but the navigation on the left side is secondary and will vary based on the section. </p>
+<p>There should be plenty of negative space to reduce confusion and better orient a user. In addition to the top and left-side navigation bars, each page will have a title and breadcrumbs to better orient the user.</p>
+<p>Data will generally be displayed in a timeline view -- a summary in form of a horizontal timeline at the top of main body of content, with the details below organized using paneled tables.</p>
+<p>Depending on the section and type of data, some pages might include data visualizations in the body of the page.</p>
+<p>The below example illustrates these guidelines in a mockup of a patient record visualization.</p>
 </div>
 
+        <div>
+          <div style="border-bottom: 1px solid #ccc;">
+            <p>Default styling</p>
+            <div> <img class="img-responsive" src="public/img/MyRecord.png"></div>
+            <p class="text-right">&nbsp;</p>  
+          </div>
+        </div>
+
+        <div>
+          <p></p>
+          <pre class="prettyprint lang-html"> &lt;img class=&quot;img-responsive&quot; src=&quot;public/img/MyRecord.png&quot;&gt;</pre>
+        </div>
       </div>
       </div>
 
