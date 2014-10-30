@@ -1,6 +1,6 @@
 <h1 class="kss-title kss-title-main"> Style Guide</h1>
 
-This guide defines a set of standards for use in the creation of medically-themed web applications, particularly Personal Health Records (PHRs).
+This guide defines a set of standards for use in the creation of medically-themed web applications, particularly Personal Health Records (PHRs). 
 
 This project uses the [KSS](https://github.com/kneath/kss) markup syntax on top of [SCSS](http://sass-lang.com/) to automatically generate the style guide, and is powered by [kss-node](https://github.com/kss-node/kss-node).  Both its content and template are based on [Twitter Bootstrap](http://getbootstrap.com) v3.2.0.
 
@@ -8,6 +8,10 @@ This project uses the [KSS](https://github.com/kneath/kss) markup syntax on top 
 # KSS Specification
 
 The text from here on is mostly taken from the [KSS specification](https://github.com/kneath/kss/blob/master/SPEC.md).
+
+In order to fully take advantage of KSS, you should create a living styleguide. A living styleguide is a *part of your application* and should include all of the CSS, Javascript, and layout the rest of your application does.
+
+Overall, keep in mind that styleguides should adapt to the application they are referencing and be easy to maintain and as automatic as possible.
 
 Unlike TomDoc, not every CSS rule should be documented. You should document a rule declaration when the rule can accurately describe a visual UI element in the styleguide. Each element should have one documentation block describing that particular UI element's various states.
 
@@ -189,30 +193,4 @@ If you do not know the compatibility, you should state as such.
 // Compatibility untested.
 ```
 
-# Styleguide
 
-In order to fully take advantage of KSS, you should create a living styleguide. A living styleguide is a *part of your application* and should include all of the CSS, Javascript, and layout the rest of your application does.
-
-To get started quickly use the CLI tool, which supports custom templates too. If you're feeling game you can (and should) build it up from scratch using the module's API.
-
-Overall, keep in mind that styleguides should adapt to the application they are referencing and be easy to maintain and as automatic as possible.
-
-## Organization
-
-The styleguide should be organized by numbered sections. These sections can go as deep as you like. Every element should have a numbered section to refer to. For example:
-
-    1. Buttons
-      1.1 Form Buttons
-        1.1.1 Generic form button
-        1.1.2 Special form button
-      1.2 Social buttons
-      1.3 Miscelaneous buttons
-    2. Form elements
-      2.1 Text fields
-      2.2 Radio and checkboxes
-    3. Text styling
-    4. Tables
-      4.1 Number tables
-      4.2 Diagram tables
-
-The goal here is to create an organizational structure that is flexible, but  rigid enough to be machine processed and referenced inside of documentation.
