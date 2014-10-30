@@ -62,7 +62,7 @@
 This system uses media query break points to trigger degradation across devices of nearly any form factor.
 More information on the responsive grid system can be found at <a href="http://www.getbootstrap.com">getbootstrap.com</a>.</p>
 <p>As a general rule, care must be taken to ensure there isn&#39;t a loss of information during transition between form factors.  Details about a record component, for example an allergy&#39;s reactions, if not immediately viewable following transition must still be accessible.  This means clear visual indicators for a user to access collapsed or hidden data.</p>
-<p>Note how by adjusting the browser window, the below blocks dynamically stack. </p>
+<p>Note how by adjusting the browser window, the below blocks dynamically stack.</p>
 </div>
 
         <div>
@@ -126,20 +126,19 @@ The navigation should feature a user picture and name, so at any time there can 
 
       <div class="panel panel-default">
         <div class="panel-body">
-        <h2 class="kss-title"><span class="kss-ref">1.5</span> - Footer Usage</h2>
+        <h2 class="kss-title"><span class="kss-ref">1.3</span> - Footer Usage</h2>
       
 
-        <div><p>The primary navigation of the site should be statically fixed to the top left of the page.
-The navigation should feature a user picture and name, so at any time there can be certainty as to who&#39;s record is being viewed.</p>
+        <div><p>The footer of the site can be modified further to include additional navigation links such as &#39;About Us&#39;, &#39;FAQ&#39;, and &#39;Contact Us&#39;. Who and what these links point to depend on the context of the PHR. The basic footer attributes Amida and notes that the DRE is Open Source and licensed under Creative Commons.</p>
 </div>
 
         <div>
           <div style="border-bottom: 1px solid #ccc;">
             <p>Default styling</p>
-            <div><div class="btn-group-vertical">
-  <button type="button" class="btn btn-default">Home</button>
-  <button type="button" class="btn btn-default">My Record</button>
-  <button type="button" class="btn btn-default">My Files</button>
+            <div><div class="container">
+ <footer>
+	 <p>Made by Amida Technology Solutions | Licensed under Creative Commons</p>
+ </footer>
 </div></div>
             <p class="text-right">&nbsp;</p>  
           </div>
@@ -147,10 +146,10 @@ The navigation should feature a user picture and name, so at any time there can 
 
         <div>
           <p></p>
-          <pre class="prettyprint lang-html">&lt;div class=&quot;btn-group-vertical&quot;&gt;
-  &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Home&lt;/button&gt;
-  &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;My Record&lt;/button&gt;
-  &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;My Files&lt;/button&gt;
+          <pre class="prettyprint lang-html">&lt;div class=&quot;container&quot;&gt;
+ &lt;footer&gt;
+	 &lt;p&gt;Made by Amida Technology Solutions | Licensed under Creative Commons&lt;/p&gt;
+ &lt;/footer&gt;
 &lt;/div&gt;</pre>
         </div>
       </div>

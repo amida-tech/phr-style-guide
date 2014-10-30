@@ -1,7 +1,3 @@
-//
-// Panels
-// --------------------------------------------------
-
 
 // Base class
 .panel {
@@ -48,6 +44,21 @@
   border-top: 1px solid $panel-inner-border;
   @include border-bottom-radius(($panel-border-radius - 1));
 }
+
+// General Panel Formatting
+//
+// Markup:
+// <div class="panel panel-default">
+//  <div class="panel-heading">
+//    <div class="panel-title">Sample Title</div>
+//  </div>
+//  <div class="panel-body">
+//    Content goes here.
+//  </div>
+//  <div class="panel-footer">This is a footer</div>
+// </div>
+//
+// Styleguide 6.1
 
 
 // List groups in panels
@@ -189,6 +200,24 @@
   }
 }
 
+// Paneled Tables
+//
+// Add visual structure to information with multiple components.
+//
+// Markup:
+// <div class="panel panel-default">
+//  <div class="panel-heading">
+//    <div class="panel-title">Sample panel title</div>
+//  </div>
+//    <table class="table">
+//      <tr><td>One Value</td><td>Two Value</td><td>Three Value</td></tr>
+//      <tr><td>Next Value</td><td>Next Two Value</td><td>Next Three Value</td></tr>
+//    </table>
+//    <div class="panel-footer">Panel Footer</div>
+//  </div>
+//
+// Styleguide 6.2
+
 
 // Collapsable panels (aka, accordion)
 //
@@ -221,6 +250,43 @@
   }
 }
 
+// Collapsable Panels
+//
+// Collapsing a panel reduces information-overload by hiding components that are less relevant.
+//
+// Markup:
+// <div class="panel-group" id="accordion">
+//  <div class="panel panel-default">
+//    <div class="panel-heading">
+//      <div class="panel-title">
+//        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+//          Panel One
+//        </a>
+//      </div>
+//    </div>
+//    <div id="collapseOne" class="panel-collapse collapse in">
+//      <div class="panel-body">
+//        Panel one collapsed content here
+//      </div>
+//    </div>
+//  </div>
+//  <div class="panel panel-default">
+//    <div class="panel-heading">
+//      <div class="panel-title">
+//        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+//          Panel Two
+//        </a>
+//      </div>
+//    </div>
+//    <div id="collapseTwo" class="panel-collapse collapse">
+//      <div class="panel-body">
+//        Panel two collapsable content
+//      </div>
+//    </div>
+//  </div>
+// </div>
+//
+// Styleguide 6.3
 
 // Contextual variations
 .panel-default {
