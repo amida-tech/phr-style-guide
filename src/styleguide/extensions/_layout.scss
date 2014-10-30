@@ -23,8 +23,15 @@
 
 // Page Structure
 //
-// The primary navigation of the site should be statically fixed to the top left of the page. The navigation should feature a user picture and name, so at any time there can be certainty as to who's record is being viewed. Each page will also include a footer, and a side navigation related to the content of the page. For example, pages related to 'My Record' will have a left-side navigation linking to the different sections of a users record (Allergies, Encounters, etc). Pages related to Insurance will have the Billing side navigation bar.
-// There should be plenty of negative space to reduce confusion and better orient a user. In addition to the top and left-side navigation bars, each page will have a header and breadcrumbs so a user is aware of their location within the site and how that point was reached.
+// The primary navigation of the site should be statically fixed to the top and left side of the page. The navigation should feature a user picture and name, so at any time there can be certainty as to whose record is being viewed. 
+//
+// The navigation fixed to the top will be constant through all pages but the navigation on the left side is secondary and will vary based on the section. 
+//
+// There should be plenty of negative space to reduce confusion and better orient a user. In addition to the top and left-side navigation bars, each page will have a title and breadcrumbs to better orient the user.
+//
+// Data will generally be displayed in a timeline view -- a summary in form of a horizontal timeline at the top of main body of content, with the details below organized using paneled tables.
+//
+// Depending on the section and type of data, some pages might include data visualizations in the body of the page.
 //
 // Styleguide 1.2
 //
