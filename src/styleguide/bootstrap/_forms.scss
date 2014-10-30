@@ -1,7 +1,39 @@
+// Log In and Registration Form Style
 //
-// Forms
-// --------------------------------------------------
+// This style will be used for text input fields such as during log in and when a user manually enters information during registration.
+// 
+// Markup:
+// <form role="form">
+//  <div class="form-group">
+//    <label for="exampleInputEmail1">Email address</label>
+//    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+//      <span class="help-block">Help text goes here: Please enter your primary email address.</span>
+//  </div>
+//  <div class="form-group">
+//    <label for="exampleInputPassword1">Password</label>
+//    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+//  </div>
+//  <button type="submit" class="btn btn-primary">Log In</button>
+// <button type="cancel" class="btn btn-default">Cancel</button>
+// </form>
+//
+// Styleguide 8.1
 
+
+// File Upload Form Style
+//
+// This is the form style used when uploading a file.
+//
+// Markup:
+//  <form role="form">
+//    <div class="form-group">
+//      <label for="exampleInputFile">File input form</label>
+//      <input type="file" id="exampleInputFile">
+//      <p class="help-block">Upload a Blue Button file.</p>
+//    </div>
+//  </form>
+//
+// Styleguide 8.2
 
 // Normalize non-controls
 //

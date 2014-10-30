@@ -39,16 +39,15 @@
 
 // Footer Usage
 //
-// The primary navigation of the site should be statically fixed to the top left of the page.
-// The navigation should feature a user picture and name, so at any time there can be certainty as to who's record is being viewed.
+// The footer of the site can be modified further to include additional navigation links such as 'About Us', 'FAQ', and 'Contact Us'. Who and what these links point to depend on the context of the PHR. The basic footer attributes Amida and notes that the DRE is Open Source and licensed under Creative Commons.
 //
 //
 // Markup:
-// <div class="btn-group-vertical">
-//   <button type="button" class="btn btn-default">Home</button>
-//   <button type="button" class="btn btn-default">My Record</button>
-//   <button type="button" class="btn btn-default">My Files</button>
+// <div class="container">
+//  <footer>
+// 	 <p>Made by Amida Technology Solutions | Licensed under Creative Commons</p>
+//  </footer>
 // </div>
 //
-// Styleguide 1.5
+// Styleguide 1.3
 //
