@@ -23,16 +23,8 @@
 
 // Page Structure
 //
-// The primary navigation of the site should be statically fixed to the top left of the page.
-// The navigation should feature a user picture and name, so at any time there can be certainty as to who's record is being viewed.
-//
-//
-// Markup:
-// <div class="btn-group-vertical">
-//   <button type="button" class="btn btn-default">Home</button>
-//   <button type="button" class="btn btn-default">My Record</button>
-//   <button type="button" class="btn btn-default">My Files</button>
-// </div>
+// The primary navigation of the site should be statically fixed to the top left of the page. The navigation should feature a user picture and name, so at any time there can be certainty as to who's record is being viewed. Each page will also include a footer, and a side navigation related to the content of the page. For example, pages related to 'My Record' will have a left-side navigation linking to the different sections of a users record (Allergies, Encounters, etc). Pages related to Insurance will have the Billing side navigation bar.
+// There should be plenty of negative space to reduce confusion and better orient a user. In addition to the top and left-side navigation bars, each page will have a header and breadcrumbs so a user is aware of their location within the site and how that point was reached.
 //
 // Styleguide 1.2
 //
