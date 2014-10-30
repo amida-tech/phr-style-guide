@@ -45,6 +45,20 @@
   @include border-bottom-radius(($panel-border-radius - 1));
 }
 
+// Container Panel Formatting
+//
+//  Container panels are used as layout components, encompassing areas of content.  They are given header values using the h2 tag.  Each section in this style guide uses a container panel.
+//
+// Markup:
+// <div class="panel panel-default">
+//  <div class="panel-body">
+//    <h2>Sample Container Panel</h2>
+//    <p>Sample Container Panel Content.</p>
+//  </div>
+// </div>
+//
+// Styleguide 6.1
+
 // General Panel Formatting
 //
 // Markup:
@@ -58,7 +72,7 @@
 //  <div class="panel-footer">This is a footer</div>
 // </div>
 //
-// Styleguide 6.1
+// Styleguide 6.2
 
 
 // List groups in panels
@@ -216,7 +230,7 @@
 //    <div class="panel-footer">Panel Footer</div>
 //  </div>
 //
-// Styleguide 6.2
+// Styleguide 6.3
 
 
 // Collapsable panels (aka, accordion)
@@ -286,7 +300,7 @@
 //  </div>
 // </div>
 //
-// Styleguide 6.3
+// Styleguide 6.4
 
 // Contextual variations
 .panel-default {
